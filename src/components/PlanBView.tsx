@@ -41,6 +41,7 @@ export function PlanBView({
   const [fetching, setFetching] = useState(false);
   const [simTime, setSimTime] = useState<string>("");
   const [simActive, setSimActive] = useState(false);
+  const [showHelp, setShowHelp] = useState(false);
 
   const locationByAlias = useMemo(() => {
     const map = new Map<string, Location>();
@@ -181,7 +182,18 @@ export function PlanBView({
       {/* Header */}
       <div className="px-4 pb-2 pt-4">
         <div className="mb-1 flex items-center justify-between">
-          <h1 className="text-lg font-semibold text-zinc-100">Plan B</h1>
+          <div className="flex items-center gap-2">
+              <h1 className="text-lg font-semibold text-zinc-100">Plan B</h1>
+              <button
+                onClick={() => setShowHelp((v) => !v)}
+                title="Anleitung"
+                className={`flex h-5 w-5 items-center justify-center rounded-full text-xs font-bold transition-colors ${
+                  showHelp ? "bg-zinc-600 text-zinc-100" : "bg-zinc-800 text-zinc-400 hover:text-zinc-200"
+                }`}
+              >
+                ?
+              </button>
+            </div>
           <div className="flex items-center gap-2">
             <span className={`text-xs font-mono ${simActive ? "text-amber-400" : "text-zinc-500"}`}>
               {now.toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit" })}{" "}
@@ -212,6 +224,41 @@ export function PlanBView({
               max="2026-05-26T06:00"
               className="flex-1 bg-transparent text-xs text-amber-200 outline-none [color-scheme:dark]"
             />
+          </div>
+        )}
+
+        {/* Help panel */}
+        {showHelp && (
+          <div className="mb-3 rounded-xl border border-zinc-700 bg-zinc-900 px-4 py-3 text-sm text-zinc-300 space-y-2">
+            <p className="font-semibold text-zinc-100">So funktioniert Plan B</p>
+            <ol className="list-decimal list-inside space-y-1.5 text-xs text-zinc-400 marker:text-zinc-600">
+              <li>
+                <span className="text-zinc-300">Favoriten setzen</span> — im Programm-Tab alle Acts mit ♥ markieren, die du sehen möchtest.
+              </li>
+              <li>
+                <span className="text-zinc-300">Standort erlauben</span> — Plan B fragt einmalig nach deinem GPS-Standort.
+              </li>
+              <li>
+                <span className="text-zinc-300">Erreichbarkeit prüfen</span> — für alle bevorstehenden Favoriten (nächste 4 Std.) wird die ÖPNV-Fahrzeit berechnet.
+              </li>
+            </ol>
+            <div className="flex flex-col gap-1 pt-1 text-xs">
+              <div className="flex items-center gap-2">
+                <span className="w-16 rounded px-1.5 py-0.5 text-center font-medium bg-green-950/60 text-green-400">grün</span>
+                <span className="text-zinc-400">≥ 15 min Puffer — du schaffst es entspannt</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="w-16 rounded px-1.5 py-0.5 text-center font-medium bg-yellow-950/60 text-yellow-400">gelb</span>
+                <span className="text-zinc-400">0–14 min Puffer — knapp, aber möglich</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="w-16 rounded px-1.5 py-0.5 text-center font-medium bg-red-950/60 text-red-400">rot</span>
+                <span className="text-zinc-400">zu wenig Zeit — such dir einen Plan B!</span>
+              </div>
+            </div>
+            <p className="text-xs text-zinc-500">
+              Fahrzeiten werden alle 3 Minuten aktualisiert. Tippe auf <strong className="text-zinc-400">Maps ↗</strong> für die ÖPNV-Route zum Venue.
+            </p>
           </div>
         )}
 
