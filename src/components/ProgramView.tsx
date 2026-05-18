@@ -161,9 +161,14 @@ export function ProgramView({
               className="scroll-mt-36"
             >
               {/* Day separator */}
-              <div className="mt-6 mb-3 flex items-center gap-3">
-                <span className="text-sm font-bold text-zinc-200">{day.label}</span>
-                <div className="h-px flex-1 bg-zinc-800" />
+              <div className="mt-8 mb-4 rounded-xl bg-zinc-900 px-4 py-3 flex items-center gap-3">
+                <div className="flex flex-col">
+                  <span className="text-base font-bold text-zinc-100 leading-tight">{day.label}</span>
+                  <span className="text-xs text-zinc-500">{date}</span>
+                </div>
+                <div className="ml-auto text-xs text-zinc-600">
+                  {groups.reduce((s, [, a]) => s + a.length, 0)} Acts
+                </div>
               </div>
 
               {groups.map(([locName, acts]) => {
