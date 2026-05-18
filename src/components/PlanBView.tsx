@@ -86,7 +86,8 @@ export function PlanBView({
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [appearances, isFavorite, loaded, favorites]);
 
-  const upcomingFavorites = useMemo(() => {
+  // Acts within the travel-time window (Google Maps is called for these)
+  const nearFavorites = useMemo(() => {
     const cutoff = new Date(now.getTime() + LOOKAHEAD_HOURS * 3_600_000);
     return favoriteAppearances.filter((a) => {
       const start = new Date(a.isoDatetime);
@@ -94,10 +95,17 @@ export function PlanBView({
     });
   }, [favoriteAppearances, now]);
 
+  // All future favorites (shown in full list)
+  const upcomingFavorites = useMemo(() => {
+    return favoriteAppearances
+      .filter((a) => new Date(a.isoDatetime) > now)
+      .sort((a, b) => a.isoDatetime.localeCompare(b.isoDatetime));
+  }, [favoriteAppearances, now]);
+
   const neededLocations = useMemo(() => {
     const seen = new Set<string>();
     const result: Location[] = [];
-    for (const a of upcomingFavorites) {
+    for (const a of nearFavorites) {
       const loc = locationByAlias.get(a.location);
       if (loc && !seen.has(loc.id)) {
         seen.add(loc.id);
@@ -141,7 +149,7 @@ export function PlanBView({
   }, [fetchTravelTimes]);
 
   const entries: PlanBEntry[] = useMemo(() => {
-    return upcomingFavorites.map((a) => {
+    return nearFavorites.map((a) => {
       const loc = locationByAlias.get(a.location);
       const start = new Date(a.isoDatetime);
       const minutesUntilStart = Math.floor((start.getTime() - now.getTime()) / 60_000);
@@ -160,13 +168,11 @@ export function PlanBView({
     }).sort((a, b) => a.appearance.isoDatetime.localeCompare(b.appearance.isoDatetime));
   }, [upcomingFavorites, travelTimes, now, locationByAlias]);
 
+  // Acts beyond the travel-time window — shown as plain list
   const laterFavorites = useMemo(() => {
     const cutoff = new Date(now.getTime() + LOOKAHEAD_HOURS * 3_600_000);
-    return favoriteAppearances
-      .filter((a) => new Date(a.isoDatetime) > cutoff)
-      .sort((a, b) => a.isoDatetime.localeCompare(b.isoDatetime))
-      .slice(0, 5);
-  }, [favoriteAppearances, now]);
+    return upcomingFavorites.filter((a) => new Date(a.isoDatetime) > cutoff);
+  }, [upcomingFavorites, now]);
 
   if (!loaded) return null;
 
@@ -289,19 +295,12 @@ export function PlanBView({
 
       {/* Upcoming entries */}
       <div className="px-4">
-        {upcomingFavorites.length === 0 ? (
-          <div className="mt-4 rounded-lg border border-zinc-800 bg-zinc-900 p-4 text-center">
-            <p className="text-sm text-zinc-400">
-              Keine Favoriten in den nächsten {LOOKAHEAD_HOURS} Stunden.
-            </p>
-            {simActive && (
-              <p className="mt-1 text-xs text-zinc-600">
-                Andere Uhrzeit wählen oder mehr Favoriten setzen.
-              </p>
-            )}
-          </div>
-        ) : (
+        {/* Near-term entries with travel time */}
+        {entries.length > 0 && (
           <div className="mt-2 flex flex-col gap-3">
+            <p className="text-xs font-semibold uppercase tracking-wide text-zinc-500">
+              Nächste {LOOKAHEAD_HOURS} Stunden
+            </p>
             {entries.map(({ appearance: a, location: loc, minutesUntilStart, travelMinutes, bufferMinutes, status }) => (
               <div key={a.id} className={`rounded-xl border px-4 py-3 ${statusColor(status)}`}>
                 <div className="flex items-start justify-between gap-2">
@@ -337,10 +336,19 @@ export function PlanBView({
           </div>
         )}
 
-        {/* Later favorites */}
-        {laterFavorites.length > 0 && (
+        {/* All remaining future favorites */}
+        {upcomingFavorites.length === 0 ? (
+          <div className="mt-4 rounded-lg border border-zinc-800 bg-zinc-900 p-4 text-center">
+            <p className="text-sm text-zinc-400">Keine zukünftigen Favoriten.</p>
+            {simActive && (
+              <p className="mt-1 text-xs text-zinc-600">Andere Uhrzeit wählen oder mehr Favoriten setzen.</p>
+            )}
+          </div>
+        ) : laterFavorites.length > 0 ? (
           <div className="mt-6">
-            <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-zinc-500">Später</p>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-zinc-500">
+              {entries.length > 0 ? "Später" : "Alle Favoriten"}
+            </p>
             {laterFavorites.map((a) => (
               <div key={a.id} className="flex items-center gap-3 border-t border-zinc-800/50 py-2">
                 <span className="w-11 shrink-0 text-xs font-mono text-zinc-600">{fmtTime(a.time)}</span>
@@ -349,7 +357,7 @@ export function PlanBView({
               </div>
             ))}
           </div>
-        )}
+        ) : null}
       </div>
     </div>
   );
