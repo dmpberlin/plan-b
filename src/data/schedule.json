@@ -5,7 +5,7 @@
     "date": "22.05.2026",
     "time": "17.00 Uhr",
     "location": "Felsenkeller",
-    "isoDatetime": "2026-05-22T17:00 Uhr:00"
+    "isoDatetime": "2026-05-22T17:00:00"
   },
   {
     "id": "2",
@@ -13,7 +13,7 @@
     "date": "22.05.2026",
     "time": "18.10 Uhr",
     "location": "Felsenkeller",
-    "isoDatetime": "2026-05-22T18:10 Uhr:00"
+    "isoDatetime": "2026-05-22T18:10:00"
   },
   {
     "id": "3",
@@ -21,7 +21,7 @@
     "date": "22.05.2026",
     "time": "19.30 Uhr",
     "location": "Felsenkeller",
-    "isoDatetime": "2026-05-22T19:30 Uhr:00"
+    "isoDatetime": "2026-05-22T19:30:00"
   },
   {
     "id": "4",
@@ -29,7 +29,7 @@
     "date": "22.05.2026",
     "time": "21.00 Uhr",
     "location": "Felsenkeller",
-    "isoDatetime": "2026-05-22T21:00 Uhr:00"
+    "isoDatetime": "2026-05-22T21:00:00"
   },
   {
     "id": "5",
@@ -37,7 +37,7 @@
     "date": "22.05.2026",
     "time": "22.30 Uhr",
     "location": "Felsenkeller",
-    "isoDatetime": "2026-05-22T22:30 Uhr:00"
+    "isoDatetime": "2026-05-22T22:30:00"
   },
   {
     "id": "6",
@@ -45,7 +45,7 @@
     "date": "22.05.2026",
     "time": "17.00 Uhr",
     "location": "Haus Leipzig",
-    "isoDatetime": "2026-05-22T17:00 Uhr:00"
+    "isoDatetime": "2026-05-22T17:00:00"
   },
   {
     "id": "7",
@@ -53,7 +53,7 @@
     "date": "22.05.2026",
     "time": "18.20 Uhr",
     "location": "Haus Leipzig",
-    "isoDatetime": "2026-05-22T18:20 Uhr:00"
+    "isoDatetime": "2026-05-22T18:20:00"
   },
   {
     "id": "8",
@@ -61,7 +61,7 @@
     "date": "22.05.2026",
     "time": "19.40 Uhr",
     "location": "Haus Leipzig",
-    "isoDatetime": "2026-05-22T19:40 Uhr:00"
+    "isoDatetime": "2026-05-22T19:40:00"
   },
   {
     "id": "9",
@@ -69,7 +69,7 @@
     "date": "22.05.2026",
     "time": "21.00 Uhr",
     "location": "Haus Leipzig",
-    "isoDatetime": "2026-05-22T21:00 Uhr:00"
+    "isoDatetime": "2026-05-22T21:00:00"
   },
   {
     "id": "10",
@@ -77,7 +77,7 @@
     "date": "22.05.2026",
     "time": "22.30 Uhr",
     "location": "Haus Leipzig",
-    "isoDatetime": "2026-05-22T22:30 Uhr:00"
+    "isoDatetime": "2026-05-22T22:30:00"
   },
   {
     "id": "11",
@@ -85,7 +85,7 @@
     "date": "22.05.2026",
     "time": "14.00 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
-    "isoDatetime": "2026-05-22T14:00 Uhr:00"
+    "isoDatetime": "2026-05-22T14:00:00"
   },
   {
     "id": "12",
@@ -93,7 +93,7 @@
     "date": "22.05.2026",
     "time": "15.30 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
-    "isoDatetime": "2026-05-22T15:30 Uhr:00"
+    "isoDatetime": "2026-05-22T15:30:00"
   },
   {
     "id": "13",
@@ -101,7 +101,7 @@
     "date": "22.05.2026",
     "time": "17.00 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
-    "isoDatetime": "2026-05-22T17:00 Uhr:00"
+    "isoDatetime": "2026-05-22T17:00:00"
   },
   {
     "id": "14",
@@ -109,7 +109,7 @@
     "date": "22.05.2026",
     "time": "18.40 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
-    "isoDatetime": "2026-05-22T18:40 Uhr:00"
+    "isoDatetime": "2026-05-22T18:40:00"
   },
   {
     "id": "15",
@@ -117,7 +117,7 @@
     "date": "22.05.2026",
     "time": "20.35 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
-    "isoDatetime": "2026-05-22T20:35 Uhr:00"
+    "isoDatetime": "2026-05-22T20:35:00"
   },
   {
     "id": "16",
@@ -125,7 +125,7 @@
     "date": "22.05.2026",
     "time": "20.00 Uhr",
     "location": "Moritzbastei",
-    "isoDatetime": "2026-05-22T20:00 Uhr:00"
+    "isoDatetime": "2026-05-22T20:00:00"
   },
   {
     "id": "17",
@@ -133,7 +133,7 @@
     "date": "22.05.2026",
     "time": "21.00 Uhr",
     "location": "Moritzbastei",
-    "isoDatetime": "2026-05-22T21:00 Uhr:00"
+    "isoDatetime": "2026-05-22T21:00:00"
   },
   {
     "id": "18",
@@ -141,7 +141,7 @@
     "date": "22.05.2026",
     "time": "22.00 Uhr",
     "location": "Moritzbastei",
-    "isoDatetime": "2026-05-22T22:00 Uhr:00"
+    "isoDatetime": "2026-05-22T22:00:00"
   },
   {
     "id": "19",
@@ -149,7 +149,7 @@
     "date": "22.05.2026",
     "time": "23.10 Uhr",
     "location": "Moritzbastei",
-    "isoDatetime": "2026-05-22T23:10 Uhr:00"
+    "isoDatetime": "2026-05-22T23:10:00"
   },
   {
     "id": "20",
@@ -157,7 +157,7 @@
     "date": "22.05.2026",
     "time": "16.30 Uhr",
     "location": "Stadtbad",
-    "isoDatetime": "2026-05-22T16:30 Uhr:00"
+    "isoDatetime": "2026-05-22T16:30:00"
   },
   {
     "id": "21",
@@ -165,7 +165,7 @@
     "date": "22.05.2026",
     "time": "17.50 Uhr",
     "location": "Stadtbad",
-    "isoDatetime": "2026-05-22T17:50 Uhr:00"
+    "isoDatetime": "2026-05-22T17:50:00"
   },
   {
     "id": "22",
@@ -173,7 +173,7 @@
     "date": "22.05.2026",
     "time": "19.10 Uhr",
     "location": "Stadtbad",
-    "isoDatetime": "2026-05-22T19:10 Uhr:00"
+    "isoDatetime": "2026-05-22T19:10:00"
   },
   {
     "id": "23",
@@ -181,7 +181,7 @@
     "date": "22.05.2026",
     "time": "20.40 Uhr",
     "location": "Stadtbad",
-    "isoDatetime": "2026-05-22T20:40 Uhr:00"
+    "isoDatetime": "2026-05-22T20:40:00"
   },
   {
     "id": "24",
@@ -189,7 +189,7 @@
     "date": "22.05.2026",
     "time": "22.10 Uhr",
     "location": "Stadtbad",
-    "isoDatetime": "2026-05-22T22:10 Uhr:00"
+    "isoDatetime": "2026-05-22T22:10:00"
   },
   {
     "id": "25",
@@ -197,7 +197,7 @@
     "date": "22.05.2026",
     "time": "17.30 Uhr",
     "location": "Täubchenthal",
-    "isoDatetime": "2026-05-22T17:30 Uhr:00"
+    "isoDatetime": "2026-05-22T17:30:00"
   },
   {
     "id": "26",
@@ -205,7 +205,7 @@
     "date": "22.05.2026",
     "time": "18.40 Uhr",
     "location": "Täubchenthal",
-    "isoDatetime": "2026-05-22T18:40 Uhr:00"
+    "isoDatetime": "2026-05-22T18:40:00"
   },
   {
     "id": "27",
@@ -213,7 +213,7 @@
     "date": "22.05.2026",
     "time": "20.00 Uhr",
     "location": "Täubchenthal",
-    "isoDatetime": "2026-05-22T20:00 Uhr:00"
+    "isoDatetime": "2026-05-22T20:00:00"
   },
   {
     "id": "28",
@@ -221,7 +221,7 @@
     "date": "22.05.2026",
     "time": "21.20 Uhr",
     "location": "Täubchenthal",
-    "isoDatetime": "2026-05-22T21:20 Uhr:00"
+    "isoDatetime": "2026-05-22T21:20:00"
   },
   {
     "id": "29",
@@ -229,7 +229,7 @@
     "date": "22.05.2026",
     "time": "22.40 Uhr",
     "location": "Täubchenthal",
-    "isoDatetime": "2026-05-22T22:40 Uhr:00"
+    "isoDatetime": "2026-05-22T22:40:00"
   },
   {
     "id": "30",
@@ -237,7 +237,7 @@
     "date": "22.05.2026",
     "time": "21.45 Uhr",
     "location": "Volkspalast Kantine",
-    "isoDatetime": "2026-05-22T21:45 Uhr:00"
+    "isoDatetime": "2026-05-22T21:45:00"
   },
   {
     "id": "31",
@@ -245,7 +245,7 @@
     "date": "22.05.2026",
     "time": "18.00 Uhr",
     "location": "Volkspalast Kuppelhalle",
-    "isoDatetime": "2026-05-22T18:00 Uhr:00"
+    "isoDatetime": "2026-05-22T18:00:00"
   },
   {
     "id": "32",
@@ -253,7 +253,7 @@
     "date": "22.05.2026",
     "time": "20.30 Uhr",
     "location": "Volkspalast Kuppelhalle",
-    "isoDatetime": "2026-05-22T20:30 Uhr:00"
+    "isoDatetime": "2026-05-22T20:30:00"
   },
   {
     "id": "33",
@@ -261,7 +261,7 @@
     "date": "22.05.2026",
     "time": "01.00 Uhr",
     "location": "agra",
-    "isoDatetime": "2026-05-22T01:00 Uhr:00"
+    "isoDatetime": "2026-05-22T01:00:00"
   },
   {
     "id": "34",
@@ -269,7 +269,7 @@
     "date": "22.05.2026",
     "time": "17.00 Uhr",
     "location": "agra",
-    "isoDatetime": "2026-05-22T17:00 Uhr:00"
+    "isoDatetime": "2026-05-22T17:00:00"
   },
   {
     "id": "35",
@@ -277,7 +277,7 @@
     "date": "22.05.2026",
     "time": "18.25 Uhr",
     "location": "agra",
-    "isoDatetime": "2026-05-22T18:25 Uhr:00"
+    "isoDatetime": "2026-05-22T18:25:00"
   },
   {
     "id": "36",
@@ -285,7 +285,7 @@
     "date": "22.05.2026",
     "time": "19.55 Uhr",
     "location": "agra",
-    "isoDatetime": "2026-05-22T19:55 Uhr:00"
+    "isoDatetime": "2026-05-22T19:55:00"
   },
   {
     "id": "37",
@@ -293,7 +293,7 @@
     "date": "22.05.2026",
     "time": "21.20 Uhr",
     "location": "agra",
-    "isoDatetime": "2026-05-22T21:20 Uhr:00"
+    "isoDatetime": "2026-05-22T21:20:00"
   },
   {
     "id": "38",
@@ -301,7 +301,7 @@
     "date": "22.05.2026",
     "time": "23.20 Uhr",
     "location": "agra",
-    "isoDatetime": "2026-05-22T23:20 Uhr:00"
+    "isoDatetime": "2026-05-22T23:20:00"
   },
   {
     "id": "39",
@@ -309,7 +309,7 @@
     "date": "22.05.2026",
     "time": "14.00 Uhr",
     "location": "agra Hall 4.2",
-    "isoDatetime": "2026-05-22T14:00 Uhr:00"
+    "isoDatetime": "2026-05-22T14:00:00"
   },
   {
     "id": "40",
@@ -317,7 +317,7 @@
     "date": "22.05.2026",
     "time": "21.00 Uhr",
     "location": "Peterskirche",
-    "isoDatetime": "2026-05-22T21:00 Uhr:00"
+    "isoDatetime": "2026-05-22T21:00:00"
   },
   {
     "id": "41",
@@ -325,7 +325,7 @@
     "date": "22.05.2026",
     "time": "22.30 Uhr",
     "location": "Parkschloß - Barocksaal",
-    "isoDatetime": "2026-05-22T22:30 Uhr:00"
+    "isoDatetime": "2026-05-22T22:30:00"
   },
   {
     "id": "42",
@@ -333,7 +333,7 @@
     "date": "22.05.2026",
     "time": "23.30 Uhr",
     "location": "Parkschloß - Barocksaal",
-    "isoDatetime": "2026-05-22T23:30 Uhr:00"
+    "isoDatetime": "2026-05-22T23:30:00"
   },
   {
     "id": "43",
@@ -341,7 +341,7 @@
     "date": "22.05.2026",
     "time": "23.30 Uhr",
     "location": "Parkschloß - Barocksaal",
-    "isoDatetime": "2026-05-22T23:30 Uhr:00"
+    "isoDatetime": "2026-05-22T23:30:00"
   },
   {
     "id": "44",
@@ -349,7 +349,7 @@
     "date": "22.05.2026",
     "time": "23.00 Uhr",
     "location": "Volkspalast Kuppelhalle",
-    "isoDatetime": "2026-05-22T23:00 Uhr:00"
+    "isoDatetime": "2026-05-22T23:00:00"
   },
   {
     "id": "45",
@@ -357,7 +357,7 @@
     "date": "23.05.2026",
     "time": "16.30 Uhr",
     "location": "Felsenkeller",
-    "isoDatetime": "2026-05-23T16:30 Uhr:00"
+    "isoDatetime": "2026-05-23T16:30:00"
   },
   {
     "id": "46",
@@ -365,7 +365,7 @@
     "date": "23.05.2026",
     "time": "17.50 Uhr",
     "location": "Felsenkeller",
-    "isoDatetime": "2026-05-23T17:50 Uhr:00"
+    "isoDatetime": "2026-05-23T17:50:00"
   },
   {
     "id": "47",
@@ -373,7 +373,7 @@
     "date": "23.05.2026",
     "time": "19.10 Uhr",
     "location": "Felsenkeller",
-    "isoDatetime": "2026-05-23T19:10 Uhr:00"
+    "isoDatetime": "2026-05-23T19:10:00"
   },
   {
     "id": "48",
@@ -381,7 +381,7 @@
     "date": "23.05.2026",
     "time": "20.40 Uhr",
     "location": "Felsenkeller",
-    "isoDatetime": "2026-05-23T20:40 Uhr:00"
+    "isoDatetime": "2026-05-23T20:40:00"
   },
   {
     "id": "49",
@@ -389,7 +389,7 @@
     "date": "23.05.2026",
     "time": "22.20 Uhr",
     "location": "Felsenkeller",
-    "isoDatetime": "2026-05-23T22:20 Uhr:00"
+    "isoDatetime": "2026-05-23T22:20:00"
   },
   {
     "id": "50",
@@ -397,7 +397,7 @@
     "date": "23.05.2026",
     "time": "17.00 Uhr",
     "location": "Haus Leipzig",
-    "isoDatetime": "2026-05-23T17:00 Uhr:00"
+    "isoDatetime": "2026-05-23T17:00:00"
   },
   {
     "id": "51",
@@ -405,7 +405,7 @@
     "date": "23.05.2026",
     "time": "18.20 Uhr",
     "location": "Haus Leipzig",
-    "isoDatetime": "2026-05-23T18:20 Uhr:00"
+    "isoDatetime": "2026-05-23T18:20:00"
   },
   {
     "id": "52",
@@ -413,7 +413,7 @@
     "date": "23.05.2026",
     "time": "19.40 Uhr",
     "location": "Haus Leipzig",
-    "isoDatetime": "2026-05-23T19:40 Uhr:00"
+    "isoDatetime": "2026-05-23T19:40:00"
   },
   {
     "id": "53",
@@ -421,7 +421,7 @@
     "date": "23.05.2026",
     "time": "21.00 Uhr",
     "location": "Haus Leipzig",
-    "isoDatetime": "2026-05-23T21:00 Uhr:00"
+    "isoDatetime": "2026-05-23T21:00:00"
   },
   {
     "id": "54",
@@ -429,7 +429,7 @@
     "date": "23.05.2026",
     "time": "22.40 Uhr",
     "location": "Haus Leipzig",
-    "isoDatetime": "2026-05-23T22:40 Uhr:00"
+    "isoDatetime": "2026-05-23T22:40:00"
   },
   {
     "id": "55",
@@ -437,7 +437,7 @@
     "date": "23.05.2026",
     "time": "14.00 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
-    "isoDatetime": "2026-05-23T14:00 Uhr:00"
+    "isoDatetime": "2026-05-23T14:00:00"
   },
   {
     "id": "56",
@@ -445,7 +445,7 @@
     "date": "23.05.2026",
     "time": "15.30 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
-    "isoDatetime": "2026-05-23T15:30 Uhr:00"
+    "isoDatetime": "2026-05-23T15:30:00"
   },
   {
     "id": "57",
@@ -453,7 +453,7 @@
     "date": "23.05.2026",
     "time": "17.00 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
-    "isoDatetime": "2026-05-23T17:00 Uhr:00"
+    "isoDatetime": "2026-05-23T17:00:00"
   },
   {
     "id": "58",
@@ -461,7 +461,7 @@
     "date": "23.05.2026",
     "time": "18.30 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
-    "isoDatetime": "2026-05-23T18:30 Uhr:00"
+    "isoDatetime": "2026-05-23T18:30:00"
   },
   {
     "id": "59",
@@ -469,7 +469,7 @@
     "date": "23.05.2026",
     "time": "20.05 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
-    "isoDatetime": "2026-05-23T20:05 Uhr:00"
+    "isoDatetime": "2026-05-23T20:05:00"
   },
   {
     "id": "60",
@@ -477,7 +477,7 @@
     "date": "23.05.2026",
     "time": "21.45 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
-    "isoDatetime": "2026-05-23T21:45 Uhr:00"
+    "isoDatetime": "2026-05-23T21:45:00"
   },
   {
     "id": "61",
@@ -485,7 +485,7 @@
     "date": "23.05.2026",
     "time": "20.00 Uhr",
     "location": "Moritzbastei",
-    "isoDatetime": "2026-05-23T20:00 Uhr:00"
+    "isoDatetime": "2026-05-23T20:00:00"
   },
   {
     "id": "62",
@@ -493,7 +493,7 @@
     "date": "23.05.2026",
     "time": "21.00 Uhr",
     "location": "Moritzbastei",
-    "isoDatetime": "2026-05-23T21:00 Uhr:00"
+    "isoDatetime": "2026-05-23T21:00:00"
   },
   {
     "id": "63",
@@ -501,7 +501,7 @@
     "date": "23.05.2026",
     "time": "22.00 Uhr",
     "location": "Moritzbastei",
-    "isoDatetime": "2026-05-23T22:00 Uhr:00"
+    "isoDatetime": "2026-05-23T22:00:00"
   },
   {
     "id": "64",
@@ -509,7 +509,7 @@
     "date": "23.05.2026",
     "time": "23.10 Uhr",
     "location": "Moritzbastei",
-    "isoDatetime": "2026-05-23T23:10 Uhr:00"
+    "isoDatetime": "2026-05-23T23:10:00"
   },
   {
     "id": "65",
@@ -517,7 +517,7 @@
     "date": "23.05.2026",
     "time": "18.45 Uhr",
     "location": "Parkschloß - Ballsaal",
-    "isoDatetime": "2026-05-23T18:45 Uhr:00"
+    "isoDatetime": "2026-05-23T18:45:00"
   },
   {
     "id": "66",
@@ -525,7 +525,7 @@
     "date": "23.05.2026",
     "time": "21.15 Uhr",
     "location": "Parkschloß - Ballsaal",
-    "isoDatetime": "2026-05-23T21:15 Uhr:00"
+    "isoDatetime": "2026-05-23T21:15:00"
   },
   {
     "id": "67",
@@ -533,7 +533,7 @@
     "date": "23.05.2026",
     "time": "17.30 Uhr",
     "location": "Parkschloß - Barocksaal",
-    "isoDatetime": "2026-05-23T17:30 Uhr:00"
+    "isoDatetime": "2026-05-23T17:30:00"
   },
   {
     "id": "68",
@@ -541,7 +541,7 @@
     "date": "23.05.2026",
     "time": "20.00 Uhr",
     "location": "Parkschloß - Barocksaal",
-    "isoDatetime": "2026-05-23T20:00 Uhr:00"
+    "isoDatetime": "2026-05-23T20:00:00"
   },
   {
     "id": "69",
@@ -549,7 +549,7 @@
     "date": "23.05.2026",
     "time": "22.30 Uhr",
     "location": "Parkschloß - Barocksaal",
-    "isoDatetime": "2026-05-23T22:30 Uhr:00"
+    "isoDatetime": "2026-05-23T22:30:00"
   },
   {
     "id": "70",
@@ -557,7 +557,7 @@
     "date": "23.05.2026",
     "time": "17.00 Uhr",
     "location": "Stadtbad",
-    "isoDatetime": "2026-05-23T17:00 Uhr:00"
+    "isoDatetime": "2026-05-23T17:00:00"
   },
   {
     "id": "71",
@@ -565,7 +565,7 @@
     "date": "23.05.2026",
     "time": "18.30 Uhr",
     "location": "Stadtbad",
-    "isoDatetime": "2026-05-23T18:30 Uhr:00"
+    "isoDatetime": "2026-05-23T18:30:00"
   },
   {
     "id": "72",
@@ -573,7 +573,7 @@
     "date": "23.05.2026",
     "time": "19.50 Uhr",
     "location": "Stadtbad",
-    "isoDatetime": "2026-05-23T19:50 Uhr:00"
+    "isoDatetime": "2026-05-23T19:50:00"
   },
   {
     "id": "73",
@@ -581,7 +581,7 @@
     "date": "23.05.2026",
     "time": "21.20 Uhr",
     "location": "Stadtbad",
-    "isoDatetime": "2026-05-23T21:20 Uhr:00"
+    "isoDatetime": "2026-05-23T21:20:00"
   },
   {
     "id": "74",
@@ -589,7 +589,7 @@
     "date": "23.05.2026",
     "time": "22.40 Uhr",
     "location": "Stadtbad",
-    "isoDatetime": "2026-05-23T22:40 Uhr:00"
+    "isoDatetime": "2026-05-23T22:40:00"
   },
   {
     "id": "75",
@@ -597,7 +597,7 @@
     "date": "23.05.2026",
     "time": "13.00 Uhr",
     "location": "Täubchenthal",
-    "isoDatetime": "2026-05-23T13:00 Uhr:00"
+    "isoDatetime": "2026-05-23T13:00:00"
   },
   {
     "id": "76",
@@ -605,7 +605,7 @@
     "date": "23.05.2026",
     "time": "16.30 Uhr",
     "location": "Täubchenthal",
-    "isoDatetime": "2026-05-23T16:30 Uhr:00"
+    "isoDatetime": "2026-05-23T16:30:00"
   },
   {
     "id": "77",
@@ -613,7 +613,7 @@
     "date": "23.05.2026",
     "time": "17.50 Uhr",
     "location": "Täubchenthal",
-    "isoDatetime": "2026-05-23T17:50 Uhr:00"
+    "isoDatetime": "2026-05-23T17:50:00"
   },
   {
     "id": "78",
@@ -621,7 +621,7 @@
     "date": "23.05.2026",
     "time": "19.10 Uhr",
     "location": "Täubchenthal",
-    "isoDatetime": "2026-05-23T19:10 Uhr:00"
+    "isoDatetime": "2026-05-23T19:10:00"
   },
   {
     "id": "79",
@@ -629,7 +629,7 @@
     "date": "23.05.2026",
     "time": "20.40 Uhr",
     "location": "Täubchenthal",
-    "isoDatetime": "2026-05-23T20:40 Uhr:00"
+    "isoDatetime": "2026-05-23T20:40:00"
   },
   {
     "id": "80",
@@ -637,7 +637,7 @@
     "date": "23.05.2026",
     "time": "22.20 Uhr",
     "location": "Täubchenthal",
-    "isoDatetime": "2026-05-23T22:20 Uhr:00"
+    "isoDatetime": "2026-05-23T22:20:00"
   },
   {
     "id": "81",
@@ -645,7 +645,7 @@
     "date": "23.05.2026",
     "time": "01.15 Uhr",
     "location": "agra",
-    "isoDatetime": "2026-05-23T01:15 Uhr:00"
+    "isoDatetime": "2026-05-23T01:15:00"
   },
   {
     "id": "82",
@@ -653,7 +653,7 @@
     "date": "23.05.2026",
     "time": "16.00 Uhr",
     "location": "agra",
-    "isoDatetime": "2026-05-23T16:00 Uhr:00"
+    "isoDatetime": "2026-05-23T16:00:00"
   },
   {
     "id": "83",
@@ -661,7 +661,7 @@
     "date": "23.05.2026",
     "time": "17.15 Uhr",
     "location": "agra",
-    "isoDatetime": "2026-05-23T17:15 Uhr:00"
+    "isoDatetime": "2026-05-23T17:15:00"
   },
   {
     "id": "84",
@@ -669,7 +669,7 @@
     "date": "23.05.2026",
     "time": "18.45 Uhr",
     "location": "agra",
-    "isoDatetime": "2026-05-23T18:45 Uhr:00"
+    "isoDatetime": "2026-05-23T18:45:00"
   },
   {
     "id": "85",
@@ -677,7 +677,7 @@
     "date": "23.05.2026",
     "time": "20.10 Uhr",
     "location": "agra",
-    "isoDatetime": "2026-05-23T20:10 Uhr:00"
+    "isoDatetime": "2026-05-23T20:10:00"
   },
   {
     "id": "86",
@@ -685,7 +685,7 @@
     "date": "23.05.2026",
     "time": "21.50 Uhr",
     "location": "agra",
-    "isoDatetime": "2026-05-23T21:50 Uhr:00"
+    "isoDatetime": "2026-05-23T21:50:00"
   },
   {
     "id": "87",
@@ -693,7 +693,7 @@
     "date": "23.05.2026",
     "time": "23.30 Uhr",
     "location": "agra",
-    "isoDatetime": "2026-05-23T23:30 Uhr:00"
+    "isoDatetime": "2026-05-23T23:30:00"
   },
   {
     "id": "88",
@@ -701,7 +701,7 @@
     "date": "23.05.2026",
     "time": "16.00 Uhr",
     "location": "Peterskirche",
-    "isoDatetime": "2026-05-23T16:00 Uhr:00"
+    "isoDatetime": "2026-05-23T16:00:00"
   },
   {
     "id": "89",
@@ -709,7 +709,7 @@
     "date": "24.05.2026",
     "time": "16.30 Uhr",
     "location": "Felsenkeller",
-    "isoDatetime": "2026-05-24T16:30 Uhr:00"
+    "isoDatetime": "2026-05-24T16:30:00"
   },
   {
     "id": "90",
@@ -717,7 +717,7 @@
     "date": "24.05.2026",
     "time": "17.50 Uhr",
     "location": "Felsenkeller",
-    "isoDatetime": "2026-05-24T17:50 Uhr:00"
+    "isoDatetime": "2026-05-24T17:50:00"
   },
   {
     "id": "91",
@@ -725,7 +725,7 @@
     "date": "24.05.2026",
     "time": "19.10 Uhr",
     "location": "Felsenkeller",
-    "isoDatetime": "2026-05-24T19:10 Uhr:00"
+    "isoDatetime": "2026-05-24T19:10:00"
   },
   {
     "id": "92",
@@ -733,7 +733,7 @@
     "date": "24.05.2026",
     "time": "20.40 Uhr",
     "location": "Felsenkeller",
-    "isoDatetime": "2026-05-24T20:40 Uhr:00"
+    "isoDatetime": "2026-05-24T20:40:00"
   },
   {
     "id": "93",
@@ -741,7 +741,7 @@
     "date": "24.05.2026",
     "time": "22.20 Uhr",
     "location": "Felsenkeller",
-    "isoDatetime": "2026-05-24T22:20 Uhr:00"
+    "isoDatetime": "2026-05-24T22:20:00"
   },
   {
     "id": "94",
@@ -749,7 +749,7 @@
     "date": "24.05.2026",
     "time": "17.00 Uhr",
     "location": "Haus Leipzig",
-    "isoDatetime": "2026-05-24T17:00 Uhr:00"
+    "isoDatetime": "2026-05-24T17:00:00"
   },
   {
     "id": "95",
@@ -757,7 +757,7 @@
     "date": "24.05.2026",
     "time": "18.20 Uhr",
     "location": "Haus Leipzig",
-    "isoDatetime": "2026-05-24T18:20 Uhr:00"
+    "isoDatetime": "2026-05-24T18:20:00"
   },
   {
     "id": "96",
@@ -765,7 +765,7 @@
     "date": "24.05.2026",
     "time": "21.00 Uhr",
     "location": "Haus Leipzig",
-    "isoDatetime": "2026-05-24T21:00 Uhr:00"
+    "isoDatetime": "2026-05-24T21:00:00"
   },
   {
     "id": "97",
@@ -773,7 +773,7 @@
     "date": "24.05.2026",
     "time": "22.30 Uhr",
     "location": "Haus Leipzig",
-    "isoDatetime": "2026-05-24T22:30 Uhr:00"
+    "isoDatetime": "2026-05-24T22:30:00"
   },
   {
     "id": "98",
@@ -781,7 +781,7 @@
     "date": "24.05.2026",
     "time": "14.00 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
-    "isoDatetime": "2026-05-24T14:00 Uhr:00"
+    "isoDatetime": "2026-05-24T14:00:00"
   },
   {
     "id": "99",
@@ -789,7 +789,7 @@
     "date": "24.05.2026",
     "time": "15.50 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
-    "isoDatetime": "2026-05-24T15:50 Uhr:00"
+    "isoDatetime": "2026-05-24T15:50:00"
   },
   {
     "id": "100",
@@ -797,7 +797,7 @@
     "date": "24.05.2026",
     "time": "17.30 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
-    "isoDatetime": "2026-05-24T17:30 Uhr:00"
+    "isoDatetime": "2026-05-24T17:30:00"
   },
   {
     "id": "101",
@@ -805,7 +805,7 @@
     "date": "24.05.2026",
     "time": "19.20 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
-    "isoDatetime": "2026-05-24T19:20 Uhr:00"
+    "isoDatetime": "2026-05-24T19:20:00"
   },
   {
     "id": "102",
@@ -813,7 +813,7 @@
     "date": "24.05.2026",
     "time": "21.20 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
-    "isoDatetime": "2026-05-24T21:20 Uhr:00"
+    "isoDatetime": "2026-05-24T21:20:00"
   },
   {
     "id": "103",
@@ -821,7 +821,7 @@
     "date": "24.05.2026",
     "time": "14.00 Uhr",
     "location": "Kirchenruine Wachau",
-    "isoDatetime": "2026-05-24T14:00 Uhr:00"
+    "isoDatetime": "2026-05-24T14:00:00"
   },
   {
     "id": "104",
@@ -829,7 +829,7 @@
     "date": "24.05.2026",
     "time": "19.45 Uhr",
     "location": "Moritzbastei",
-    "isoDatetime": "2026-05-24T19:45 Uhr:00"
+    "isoDatetime": "2026-05-24T19:45:00"
   },
   {
     "id": "105",
@@ -837,7 +837,7 @@
     "date": "24.05.2026",
     "time": "20.45 Uhr",
     "location": "Moritzbastei",
-    "isoDatetime": "2026-05-24T20:45 Uhr:00"
+    "isoDatetime": "2026-05-24T20:45:00"
   },
   {
     "id": "106",
@@ -845,7 +845,7 @@
     "date": "24.05.2026",
     "time": "21.45 Uhr",
     "location": "Moritzbastei",
-    "isoDatetime": "2026-05-24T21:45 Uhr:00"
+    "isoDatetime": "2026-05-24T21:45:00"
   },
   {
     "id": "107",
@@ -853,7 +853,7 @@
     "date": "24.05.2026",
     "time": "22.55 Uhr",
     "location": "Moritzbastei",
-    "isoDatetime": "2026-05-24T22:55 Uhr:00"
+    "isoDatetime": "2026-05-24T22:55:00"
   },
   {
     "id": "108",
@@ -861,7 +861,7 @@
     "date": "24.05.2026",
     "time": "18.45 Uhr",
     "location": "Parkschloß - Ballsaal",
-    "isoDatetime": "2026-05-24T18:45 Uhr:00"
+    "isoDatetime": "2026-05-24T18:45:00"
   },
   {
     "id": "109",
@@ -869,7 +869,7 @@
     "date": "24.05.2026",
     "time": "21.15 Uhr",
     "location": "Parkschloß - Ballsaal",
-    "isoDatetime": "2026-05-24T21:15 Uhr:00"
+    "isoDatetime": "2026-05-24T21:15:00"
   },
   {
     "id": "110",
@@ -877,7 +877,7 @@
     "date": "24.05.2026",
     "time": "17.30 Uhr",
     "location": "Parkschloß - Barocksaal",
-    "isoDatetime": "2026-05-24T17:30 Uhr:00"
+    "isoDatetime": "2026-05-24T17:30:00"
   },
   {
     "id": "111",
@@ -885,7 +885,7 @@
     "date": "24.05.2026",
     "time": "20.00 Uhr",
     "location": "Parkschloß - Barocksaal",
-    "isoDatetime": "2026-05-24T20:00 Uhr:00"
+    "isoDatetime": "2026-05-24T20:00:00"
   },
   {
     "id": "112",
@@ -893,7 +893,7 @@
     "date": "24.05.2026",
     "time": "22.30 Uhr",
     "location": "Parkschloß - Barocksaal",
-    "isoDatetime": "2026-05-24T22:30 Uhr:00"
+    "isoDatetime": "2026-05-24T22:30:00"
   },
   {
     "id": "113",
@@ -901,7 +901,7 @@
     "date": "24.05.2026",
     "time": "16.00 Uhr",
     "location": "Peterskirche",
-    "isoDatetime": "2026-05-24T16:00 Uhr:00"
+    "isoDatetime": "2026-05-24T16:00:00"
   },
   {
     "id": "114",
@@ -909,7 +909,7 @@
     "date": "24.05.2026",
     "time": "19.00 Uhr",
     "location": "Peterskirche",
-    "isoDatetime": "2026-05-24T19:00 Uhr:00"
+    "isoDatetime": "2026-05-24T19:00:00"
   },
   {
     "id": "115",
@@ -917,7 +917,7 @@
     "date": "24.05.2026",
     "time": "17.00 Uhr",
     "location": "Stadtbad",
-    "isoDatetime": "2026-05-24T17:00 Uhr:00"
+    "isoDatetime": "2026-05-24T17:00:00"
   },
   {
     "id": "116",
@@ -925,7 +925,7 @@
     "date": "24.05.2026",
     "time": "18.20 Uhr",
     "location": "Stadtbad",
-    "isoDatetime": "2026-05-24T18:20 Uhr:00"
+    "isoDatetime": "2026-05-24T18:20:00"
   },
   {
     "id": "117",
@@ -933,7 +933,7 @@
     "date": "24.05.2026",
     "time": "19.40 Uhr",
     "location": "Stadtbad",
-    "isoDatetime": "2026-05-24T19:40 Uhr:00"
+    "isoDatetime": "2026-05-24T19:40:00"
   },
   {
     "id": "118",
@@ -941,7 +941,7 @@
     "date": "24.05.2026",
     "time": "21.10 Uhr",
     "location": "Stadtbad",
-    "isoDatetime": "2026-05-24T21:10 Uhr:00"
+    "isoDatetime": "2026-05-24T21:10:00"
   },
   {
     "id": "119",
@@ -949,7 +949,7 @@
     "date": "24.05.2026",
     "time": "22.40 Uhr",
     "location": "Stadtbad",
-    "isoDatetime": "2026-05-24T22:40 Uhr:00"
+    "isoDatetime": "2026-05-24T22:40:00"
   },
   {
     "id": "120",
@@ -957,7 +957,7 @@
     "date": "24.05.2026",
     "time": "16.30 Uhr",
     "location": "Täubchenthal",
-    "isoDatetime": "2026-05-24T16:30 Uhr:00"
+    "isoDatetime": "2026-05-24T16:30:00"
   },
   {
     "id": "121",
@@ -965,7 +965,7 @@
     "date": "24.05.2026",
     "time": "17.50 Uhr",
     "location": "Täubchenthal",
-    "isoDatetime": "2026-05-24T17:50 Uhr:00"
+    "isoDatetime": "2026-05-24T17:50:00"
   },
   {
     "id": "122",
@@ -973,7 +973,7 @@
     "date": "24.05.2026",
     "time": "19.10 Uhr",
     "location": "Täubchenthal",
-    "isoDatetime": "2026-05-24T19:10 Uhr:00"
+    "isoDatetime": "2026-05-24T19:10:00"
   },
   {
     "id": "123",
@@ -981,7 +981,7 @@
     "date": "24.05.2026",
     "time": "20.40 Uhr",
     "location": "Täubchenthal",
-    "isoDatetime": "2026-05-24T20:40 Uhr:00"
+    "isoDatetime": "2026-05-24T20:40:00"
   },
   {
     "id": "124",
@@ -989,7 +989,7 @@
     "date": "24.05.2026",
     "time": "22.20 Uhr",
     "location": "Täubchenthal",
-    "isoDatetime": "2026-05-24T22:20 Uhr:00"
+    "isoDatetime": "2026-05-24T22:20:00"
   },
   {
     "id": "125",
@@ -997,7 +997,7 @@
     "date": "24.05.2026",
     "time": "16.35 Uhr",
     "location": "Volkspalast Kantine",
-    "isoDatetime": "2026-05-24T16:35 Uhr:00"
+    "isoDatetime": "2026-05-24T16:35:00"
   },
   {
     "id": "126",
@@ -1005,7 +1005,7 @@
     "date": "24.05.2026",
     "time": "18.45 Uhr",
     "location": "Volkspalast Kantine",
-    "isoDatetime": "2026-05-24T18:45 Uhr:00"
+    "isoDatetime": "2026-05-24T18:45:00"
   },
   {
     "id": "127",
@@ -1013,7 +1013,7 @@
     "date": "24.05.2026",
     "time": "21.15 Uhr",
     "location": "Volkspalast Kantine",
-    "isoDatetime": "2026-05-24T21:15 Uhr:00"
+    "isoDatetime": "2026-05-24T21:15:00"
   },
   {
     "id": "128",
@@ -1021,7 +1021,7 @@
     "date": "24.05.2026",
     "time": "15.30 Uhr",
     "location": "Volkspalast Kuppelhalle",
-    "isoDatetime": "2026-05-24T15:30 Uhr:00"
+    "isoDatetime": "2026-05-24T15:30:00"
   },
   {
     "id": "129",
@@ -1029,7 +1029,7 @@
     "date": "24.05.2026",
     "time": "17.40 Uhr",
     "location": "Volkspalast Kuppelhalle",
-    "isoDatetime": "2026-05-24T17:40 Uhr:00"
+    "isoDatetime": "2026-05-24T17:40:00"
   },
   {
     "id": "130",
@@ -1037,7 +1037,7 @@
     "date": "24.05.2026",
     "time": "19.50 Uhr",
     "location": "Volkspalast Kuppelhalle",
-    "isoDatetime": "2026-05-24T19:50 Uhr:00"
+    "isoDatetime": "2026-05-24T19:50:00"
   },
   {
     "id": "131",
@@ -1045,7 +1045,7 @@
     "date": "24.05.2026",
     "time": "22.30 Uhr",
     "location": "Volkspalast Kuppelhalle",
-    "isoDatetime": "2026-05-24T22:30 Uhr:00"
+    "isoDatetime": "2026-05-24T22:30:00"
   },
   {
     "id": "132",
@@ -1053,7 +1053,7 @@
     "date": "24.05.2026",
     "time": "16.00 Uhr",
     "location": "agra",
-    "isoDatetime": "2026-05-24T16:00 Uhr:00"
+    "isoDatetime": "2026-05-24T16:00:00"
   },
   {
     "id": "133",
@@ -1061,7 +1061,7 @@
     "date": "24.05.2026",
     "time": "17.15 Uhr",
     "location": "agra",
-    "isoDatetime": "2026-05-24T17:15 Uhr:00"
+    "isoDatetime": "2026-05-24T17:15:00"
   },
   {
     "id": "134",
@@ -1069,7 +1069,7 @@
     "date": "24.05.2026",
     "time": "18.45 Uhr",
     "location": "agra",
-    "isoDatetime": "2026-05-24T18:45 Uhr:00"
+    "isoDatetime": "2026-05-24T18:45:00"
   },
   {
     "id": "135",
@@ -1077,7 +1077,7 @@
     "date": "24.05.2026",
     "time": "20.10 Uhr",
     "location": "agra",
-    "isoDatetime": "2026-05-24T20:10 Uhr:00"
+    "isoDatetime": "2026-05-24T20:10:00"
   },
   {
     "id": "136",
@@ -1085,7 +1085,7 @@
     "date": "24.05.2026",
     "time": "21.50 Uhr",
     "location": "agra",
-    "isoDatetime": "2026-05-24T21:50 Uhr:00"
+    "isoDatetime": "2026-05-24T21:50:00"
   },
   {
     "id": "137",
@@ -1093,7 +1093,7 @@
     "date": "24.05.2026",
     "time": "23.30 Uhr",
     "location": "agra",
-    "isoDatetime": "2026-05-24T23:30 Uhr:00"
+    "isoDatetime": "2026-05-24T23:30:00"
   },
   {
     "id": "138",
@@ -1101,7 +1101,7 @@
     "date": "25.05.2026",
     "time": "16.30 Uhr",
     "location": "Felsenkeller",
-    "isoDatetime": "2026-05-25T16:30 Uhr:00"
+    "isoDatetime": "2026-05-25T16:30:00"
   },
   {
     "id": "139",
@@ -1109,7 +1109,7 @@
     "date": "25.05.2026",
     "time": "17.50 Uhr",
     "location": "Felsenkeller",
-    "isoDatetime": "2026-05-25T17:50 Uhr:00"
+    "isoDatetime": "2026-05-25T17:50:00"
   },
   {
     "id": "140",
@@ -1117,7 +1117,7 @@
     "date": "25.05.2026",
     "time": "19.10 Uhr",
     "location": "Felsenkeller",
-    "isoDatetime": "2026-05-25T19:10 Uhr:00"
+    "isoDatetime": "2026-05-25T19:10:00"
   },
   {
     "id": "141",
@@ -1125,7 +1125,7 @@
     "date": "25.05.2026",
     "time": "20.40 Uhr",
     "location": "Felsenkeller",
-    "isoDatetime": "2026-05-25T20:40 Uhr:00"
+    "isoDatetime": "2026-05-25T20:40:00"
   },
   {
     "id": "142",
@@ -1133,7 +1133,7 @@
     "date": "25.05.2026",
     "time": "22.20 Uhr",
     "location": "Felsenkeller",
-    "isoDatetime": "2026-05-25T22:20 Uhr:00"
+    "isoDatetime": "2026-05-25T22:20:00"
   },
   {
     "id": "143",
@@ -1141,7 +1141,7 @@
     "date": "25.05.2026",
     "time": "17.00 Uhr",
     "location": "Haus Leipzig",
-    "isoDatetime": "2026-05-25T17:00 Uhr:00"
+    "isoDatetime": "2026-05-25T17:00:00"
   },
   {
     "id": "144",
@@ -1149,7 +1149,7 @@
     "date": "25.05.2026",
     "time": "18.20 Uhr",
     "location": "Haus Leipzig",
-    "isoDatetime": "2026-05-25T18:20 Uhr:00"
+    "isoDatetime": "2026-05-25T18:20:00"
   },
   {
     "id": "145",
@@ -1157,7 +1157,7 @@
     "date": "25.05.2026",
     "time": "19.40 Uhr",
     "location": "Haus Leipzig",
-    "isoDatetime": "2026-05-25T19:40 Uhr:00"
+    "isoDatetime": "2026-05-25T19:40:00"
   },
   {
     "id": "146",
@@ -1165,7 +1165,7 @@
     "date": "25.05.2026",
     "time": "21.10 Uhr",
     "location": "Haus Leipzig",
-    "isoDatetime": "2026-05-25T21:10 Uhr:00"
+    "isoDatetime": "2026-05-25T21:10:00"
   },
   {
     "id": "147",
@@ -1173,7 +1173,7 @@
     "date": "25.05.2026",
     "time": "14.00 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
-    "isoDatetime": "2026-05-25T14:00 Uhr:00"
+    "isoDatetime": "2026-05-25T14:00:00"
   },
   {
     "id": "148",
@@ -1181,7 +1181,7 @@
     "date": "25.05.2026",
     "time": "15.30 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
-    "isoDatetime": "2026-05-25T15:30 Uhr:00"
+    "isoDatetime": "2026-05-25T15:30:00"
   },
   {
     "id": "149",
@@ -1189,7 +1189,7 @@
     "date": "25.05.2026",
     "time": "17.20 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
-    "isoDatetime": "2026-05-25T17:20 Uhr:00"
+    "isoDatetime": "2026-05-25T17:20:00"
   },
   {
     "id": "150",
@@ -1197,7 +1197,7 @@
     "date": "25.05.2026",
     "time": "19.15 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
-    "isoDatetime": "2026-05-25T19:15 Uhr:00"
+    "isoDatetime": "2026-05-25T19:15:00"
   },
   {
     "id": "151",
@@ -1205,7 +1205,7 @@
     "date": "25.05.2026",
     "time": "19.30 Uhr",
     "location": "Moritzbastei",
-    "isoDatetime": "2026-05-25T19:30 Uhr:00"
+    "isoDatetime": "2026-05-25T19:30:00"
   },
   {
     "id": "152",
@@ -1213,7 +1213,7 @@
     "date": "25.05.2026",
     "time": "20.30 Uhr",
     "location": "Moritzbastei",
-    "isoDatetime": "2026-05-25T20:30 Uhr:00"
+    "isoDatetime": "2026-05-25T20:30:00"
   },
   {
     "id": "153",
@@ -1221,7 +1221,7 @@
     "date": "25.05.2026",
     "time": "21.30 Uhr",
     "location": "Moritzbastei",
-    "isoDatetime": "2026-05-25T21:30 Uhr:00"
+    "isoDatetime": "2026-05-25T21:30:00"
   },
   {
     "id": "154",
@@ -1229,7 +1229,7 @@
     "date": "25.05.2026",
     "time": "22.40 Uhr",
     "location": "Moritzbastei",
-    "isoDatetime": "2026-05-25T22:40 Uhr:00"
+    "isoDatetime": "2026-05-25T22:40:00"
   },
   {
     "id": "155",
@@ -1237,7 +1237,7 @@
     "date": "25.05.2026",
     "time": "15.30 Uhr",
     "location": "Parkschloß - Barocksaal",
-    "isoDatetime": "2026-05-25T15:30 Uhr:00"
+    "isoDatetime": "2026-05-25T15:30:00"
   },
   {
     "id": "156",
@@ -1245,7 +1245,7 @@
     "date": "25.05.2026",
     "time": "17.20 Uhr",
     "location": "Parkschloß - Barocksaal",
-    "isoDatetime": "2026-05-25T17:20 Uhr:00"
+    "isoDatetime": "2026-05-25T17:20:00"
   },
   {
     "id": "157",
@@ -1253,7 +1253,7 @@
     "date": "25.05.2026",
     "time": "18.30 Uhr",
     "location": "Parkschloß - Barocksaal",
-    "isoDatetime": "2026-05-25T18:30 Uhr:00"
+    "isoDatetime": "2026-05-25T18:30:00"
   },
   {
     "id": "158",
@@ -1261,7 +1261,7 @@
     "date": "25.05.2026",
     "time": "19.50 Uhr",
     "location": "Parkschloß - Barocksaal",
-    "isoDatetime": "2026-05-25T19:50 Uhr:00"
+    "isoDatetime": "2026-05-25T19:50:00"
   },
   {
     "id": "159",
@@ -1269,7 +1269,7 @@
     "date": "25.05.2026",
     "time": "21.30 Uhr",
     "location": "Parkschloß - Barocksaal",
-    "isoDatetime": "2026-05-25T21:30 Uhr:00"
+    "isoDatetime": "2026-05-25T21:30:00"
   },
   {
     "id": "160",
@@ -1277,7 +1277,7 @@
     "date": "25.05.2026",
     "time": "14.00 Uhr",
     "location": "Peterskirche",
-    "isoDatetime": "2026-05-25T14:00 Uhr:00"
+    "isoDatetime": "2026-05-25T14:00:00"
   },
   {
     "id": "161",
@@ -1285,7 +1285,7 @@
     "date": "25.05.2026",
     "time": "16.00 Uhr",
     "location": "Peterskirche",
-    "isoDatetime": "2026-05-25T16:00 Uhr:00"
+    "isoDatetime": "2026-05-25T16:00:00"
   },
   {
     "id": "162",
@@ -1293,7 +1293,7 @@
     "date": "25.05.2026",
     "time": "18.00 Uhr",
     "location": "Peterskirche",
-    "isoDatetime": "2026-05-25T18:00 Uhr:00"
+    "isoDatetime": "2026-05-25T18:00:00"
   },
   {
     "id": "163",
@@ -1301,7 +1301,7 @@
     "date": "25.05.2026",
     "time": "16.30 Uhr",
     "location": "Täubchenthal",
-    "isoDatetime": "2026-05-25T16:30 Uhr:00"
+    "isoDatetime": "2026-05-25T16:30:00"
   },
   {
     "id": "164",
@@ -1309,7 +1309,7 @@
     "date": "25.05.2026",
     "time": "17.50 Uhr",
     "location": "Täubchenthal",
-    "isoDatetime": "2026-05-25T17:50 Uhr:00"
+    "isoDatetime": "2026-05-25T17:50:00"
   },
   {
     "id": "165",
@@ -1317,7 +1317,7 @@
     "date": "25.05.2026",
     "time": "19.10 Uhr",
     "location": "Täubchenthal",
-    "isoDatetime": "2026-05-25T19:10 Uhr:00"
+    "isoDatetime": "2026-05-25T19:10:00"
   },
   {
     "id": "166",
@@ -1325,7 +1325,7 @@
     "date": "25.05.2026",
     "time": "20.50 Uhr",
     "location": "Täubchenthal",
-    "isoDatetime": "2026-05-25T20:50 Uhr:00"
+    "isoDatetime": "2026-05-25T20:50:00"
   },
   {
     "id": "167",
@@ -1333,7 +1333,7 @@
     "date": "25.05.2026",
     "time": "22.30 Uhr",
     "location": "Täubchenthal",
-    "isoDatetime": "2026-05-25T22:30 Uhr:00"
+    "isoDatetime": "2026-05-25T22:30:00"
   },
   {
     "id": "168",
@@ -1341,7 +1341,7 @@
     "date": "25.05.2026",
     "time": "18.45 Uhr",
     "location": "Volkspalast Kantine",
-    "isoDatetime": "2026-05-25T18:45 Uhr:00"
+    "isoDatetime": "2026-05-25T18:45:00"
   },
   {
     "id": "169",
@@ -1349,7 +1349,7 @@
     "date": "25.05.2026",
     "time": "20.55 Uhr",
     "location": "Volkspalast Kantine",
-    "isoDatetime": "2026-05-25T20:55 Uhr:00"
+    "isoDatetime": "2026-05-25T20:55:00"
   },
   {
     "id": "170",
@@ -1357,7 +1357,7 @@
     "date": "25.05.2026",
     "time": "17.30 Uhr",
     "location": "Volkspalast Kuppelhalle",
-    "isoDatetime": "2026-05-25T17:30 Uhr:00"
+    "isoDatetime": "2026-05-25T17:30:00"
   },
   {
     "id": "171",
@@ -1365,7 +1365,7 @@
     "date": "25.05.2026",
     "time": "19.40 Uhr",
     "location": "Volkspalast Kuppelhalle",
-    "isoDatetime": "2026-05-25T19:40 Uhr:00"
+    "isoDatetime": "2026-05-25T19:40:00"
   },
   {
     "id": "172",
@@ -1373,7 +1373,7 @@
     "date": "25.05.2026",
     "time": "21.50 Uhr",
     "location": "Volkspalast Kuppelhalle",
-    "isoDatetime": "2026-05-25T21:50 Uhr:00"
+    "isoDatetime": "2026-05-25T21:50:00"
   },
   {
     "id": "173",
@@ -1381,7 +1381,7 @@
     "date": "25.05.2026",
     "time": "17.00 Uhr",
     "location": "agra",
-    "isoDatetime": "2026-05-25T17:00 Uhr:00"
+    "isoDatetime": "2026-05-25T17:00:00"
   },
   {
     "id": "174",
@@ -1389,7 +1389,7 @@
     "date": "25.05.2026",
     "time": "18.30 Uhr",
     "location": "agra",
-    "isoDatetime": "2026-05-25T18:30 Uhr:00"
+    "isoDatetime": "2026-05-25T18:30:00"
   },
   {
     "id": "175",
@@ -1397,7 +1397,7 @@
     "date": "25.05.2026",
     "time": "19.55 Uhr",
     "location": "agra",
-    "isoDatetime": "2026-05-25T19:55 Uhr:00"
+    "isoDatetime": "2026-05-25T19:55:00"
   },
   {
     "id": "176",
@@ -1405,7 +1405,7 @@
     "date": "25.05.2026",
     "time": "21.20 Uhr",
     "location": "agra",
-    "isoDatetime": "2026-05-25T21:20 Uhr:00"
+    "isoDatetime": "2026-05-25T21:20:00"
   },
   {
     "id": "177",
@@ -1413,7 +1413,7 @@
     "date": "25.05.2026",
     "time": "22.45 Uhr",
     "location": "agra",
-    "isoDatetime": "2026-05-25T22:45 Uhr:00"
+    "isoDatetime": "2026-05-25T22:45:00"
   },
   {
     "id": "178",
@@ -1421,6 +1421,6 @@
     "date": "25.05.2026",
     "time": "12.30 Uhr",
     "location": "agra-Halle 4.2",
-    "isoDatetime": "2026-05-25T12:30 Uhr:00"
+    "isoDatetime": "2026-05-25T12:30:00"
   }
 ]
