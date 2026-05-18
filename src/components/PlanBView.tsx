@@ -6,8 +6,15 @@ import { Appearance, Location, PlanBEntry, ReachabilityStatus } from "@/types";
 import { useFavorites } from "@/hooks/useFavorites";
 import { useGeolocation } from "@/hooks/useGeolocation";
 
-const REFRESH_INTERVAL_MS = 3 * 60 * 1000; // 3 min
+const REFRESH_INTERVAL_MS = 3 * 60 * 1000;
 const LOOKAHEAD_HOURS = 4;
+
+const SIM_DATES = [
+  { label: "Fr 22.05.", iso: "2026-05-22" },
+  { label: "Sa 23.05.", iso: "2026-05-23" },
+  { label: "So 24.05.", iso: "2026-05-24" },
+  { label: "Mo 25.05.", iso: "2026-05-25" },
+];
 
 function statusColor(s: ReachabilityStatus) {
   if (s === "reachable") return "text-green-400 border-green-800 bg-green-950/40";
@@ -21,6 +28,10 @@ function statusLabel(s: ReachabilityStatus, buffer: number | null) {
   if (s === "tight") return buffer !== null && buffer >= 0 ? `+${buffer} min` : "knapp";
   if (s === "missed") return "zu spät";
   return "—";
+}
+
+function fmtTime(time: string) {
+  return time.replace(/\s*Uhr$/i, "").replace(".", ":");
 }
 
 function mapsLink(origin: { lat: number; lng: number }, dest: Location) {
@@ -39,8 +50,9 @@ export function PlanBView({
   const [travelTimes, setTravelTimes] = useState<Record<string, number | null>>({});
   const [now, setNow] = useState(() => new Date());
   const [fetching, setFetching] = useState(false);
-  const [simTime, setSimTime] = useState<string>("");
   const [simActive, setSimActive] = useState(false);
+  const [simDate, setSimDate] = useState(SIM_DATES[0].iso);
+  const [simTimeVal, setSimTimeVal] = useState("17:00");
   const [showHelp, setShowHelp] = useState(false);
 
   const locationByAlias = useMemo(() => {
@@ -51,22 +63,22 @@ export function PlanBView({
     return map;
   }, [locations]);
 
-  // Update clock every 30s (skipped when simulation is active)
+  // Clock tick — paused during simulation
   useEffect(() => {
     if (simActive) return;
     const t = setInterval(() => setNow(new Date()), 30_000);
     return () => clearInterval(t);
   }, [simActive]);
 
-  // Apply simulated time
+  // Apply simulated time whenever date/time selectors change
   useEffect(() => {
-    if (simActive && simTime) {
-      const parsed = new Date(simTime);
-      if (!isNaN(parsed.getTime())) setNow(parsed);
-    } else if (!simActive) {
+    if (!simActive) {
       setNow(new Date());
+      return;
     }
-  }, [simActive, simTime]);
+    const parsed = new Date(`${simDate}T${simTimeVal}:00`);
+    if (!isNaN(parsed.getTime())) setNow(parsed);
+  }, [simActive, simDate, simTimeVal]);
 
   const favoriteAppearances = useMemo(() => {
     if (!loaded) return [];
@@ -82,7 +94,6 @@ export function PlanBView({
     });
   }, [favoriteAppearances, now]);
 
-  // Unique location IDs needed
   const neededLocations = useMemo(() => {
     const seen = new Set<string>();
     const result: Location[] = [];
@@ -110,7 +121,8 @@ export function PlanBView({
             lat: l.lat,
             lng: l.lng,
           })),
-          departureTime: Math.floor(Date.now() / 1000),
+          // Use simulated time so Google returns correct transit schedules
+          departureTime: Math.floor(now.getTime() / 1000),
         }),
       });
       if (res.ok) {
@@ -120,7 +132,7 @@ export function PlanBView({
     } finally {
       setFetching(false);
     }
-  }, [position, neededLocations]);
+  }, [position, neededLocations, now]);
 
   useEffect(() => {
     fetchTravelTimes();
@@ -148,7 +160,6 @@ export function PlanBView({
     }).sort((a, b) => a.appearance.isoDatetime.localeCompare(b.appearance.isoDatetime));
   }, [upcomingFavorites, travelTimes, now, locationByAlias]);
 
-  // All favorites outside lookahead window
   const laterFavorites = useMemo(() => {
     const cutoff = new Date(now.getTime() + LOOKAHEAD_HOURS * 3_600_000);
     return favoriteAppearances
@@ -161,7 +172,7 @@ export function PlanBView({
 
   if (favoriteAppearances.length === 0) {
     return (
-      <div className="flex flex-1 flex-col items-center justify-center gap-4 px-8 text-center">
+      <div className="flex flex-1 flex-col items-center justify-center gap-4 px-8 py-24 text-center">
         <span className="text-5xl">♥</span>
         <p className="text-zinc-300 font-medium">Noch keine Favoriten</p>
         <p className="text-sm text-zinc-500">
@@ -181,31 +192,29 @@ export function PlanBView({
     <div className="flex flex-col pb-24">
       {/* Header */}
       <div className="px-4 pb-2 pt-4">
-        <div className="mb-1 flex items-center justify-between">
+        <div className="mb-2 flex items-center justify-between">
           <div className="flex items-center gap-2">
-              <h1 className="text-lg font-semibold text-zinc-100">Plan B</h1>
-              <button
-                onClick={() => setShowHelp((v) => !v)}
-                title="Anleitung"
-                className={`flex h-5 w-5 items-center justify-center rounded-full text-xs font-bold transition-colors ${
-                  showHelp ? "bg-zinc-600 text-zinc-100" : "bg-zinc-800 text-zinc-400 hover:text-zinc-200"
-                }`}
-              >
-                ?
-              </button>
-            </div>
+            <h1 className="text-lg font-semibold text-zinc-100">Plan B</h1>
+            <button
+              onClick={() => setShowHelp((v) => !v)}
+              title="Anleitung"
+              className={`flex h-5 w-5 items-center justify-center rounded-full text-xs font-bold transition-colors ${
+                showHelp ? "bg-zinc-600 text-zinc-100" : "bg-zinc-800 text-zinc-400 hover:text-zinc-200"
+              }`}
+            >
+              ?
+            </button>
+          </div>
           <div className="flex items-center gap-2">
             <span className={`text-xs font-mono ${simActive ? "text-amber-400" : "text-zinc-500"}`}>
-              {now.toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit" })}{" "}
+              {now.toLocaleDateString("de-DE", { weekday: "short", day: "2-digit", month: "2-digit" })}{" "}
               {now.toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" })}
             </span>
             <button
               onClick={() => setSimActive((v) => !v)}
               title="Zeitsimulation"
               className={`rounded px-1.5 py-0.5 text-xs transition-colors ${
-                simActive
-                  ? "bg-amber-900/60 text-amber-400"
-                  : "bg-zinc-800 text-zinc-500 hover:text-zinc-300"
+                simActive ? "bg-amber-900/60 text-amber-400" : "bg-zinc-800 text-zinc-500 hover:text-zinc-300"
               }`}
             >
               ⏱
@@ -213,62 +222,62 @@ export function PlanBView({
           </div>
         </div>
 
+        {/* Simulation panel */}
         {simActive && (
-          <div className="mb-2 flex items-center gap-2 rounded-lg border border-amber-800/50 bg-amber-950/30 px-3 py-2">
-            <span className="text-xs text-amber-400 shrink-0">Simulation</span>
-            <input
-              type="datetime-local"
-              value={simTime}
-              onChange={(e) => setSimTime(e.target.value)}
-              min="2026-05-22T00:00"
-              max="2026-05-26T06:00"
-              className="flex-1 bg-transparent text-xs text-amber-200 outline-none [color-scheme:dark]"
-            />
+          <div className="mb-3 rounded-xl border border-amber-800/50 bg-amber-950/20 px-3 py-3 space-y-2">
+            <p className="text-xs font-semibold text-amber-400">Zeitsimulation aktiv</p>
+            <div className="flex gap-2">
+              <select
+                value={simDate}
+                onChange={(e) => setSimDate(e.target.value)}
+                className="flex-1 rounded-lg border border-amber-800/40 bg-zinc-900 px-2 py-2 text-sm text-amber-200 outline-none"
+              >
+                {SIM_DATES.map((d) => (
+                  <option key={d.iso} value={d.iso}>{d.label}</option>
+                ))}
+              </select>
+              <input
+                type="time"
+                value={simTimeVal}
+                onChange={(e) => setSimTimeVal(e.target.value)}
+                className="w-28 rounded-lg border border-amber-800/40 bg-zinc-900 px-2 py-2 text-sm text-amber-200 outline-none [color-scheme:dark]"
+              />
+            </div>
           </div>
         )}
 
         {/* Help panel */}
         {showHelp && (
-          <div className="mb-3 rounded-xl border border-zinc-700 bg-zinc-900 px-4 py-3 text-sm text-zinc-300 space-y-2">
-            <p className="font-semibold text-zinc-100">So funktioniert Plan B</p>
+          <div className="mb-3 rounded-xl border border-zinc-700 bg-zinc-900 px-4 py-3 space-y-2">
+            <p className="text-sm font-semibold text-zinc-100">So funktioniert Plan B</p>
             <ol className="list-decimal list-inside space-y-1.5 text-xs text-zinc-400 marker:text-zinc-600">
-              <li>
-                <span className="text-zinc-300">Favoriten setzen</span> — im Programm-Tab alle Acts mit ♥ markieren, die du sehen möchtest.
-              </li>
-              <li>
-                <span className="text-zinc-300">Standort erlauben</span> — Plan B fragt einmalig nach deinem GPS-Standort.
-              </li>
-              <li>
-                <span className="text-zinc-300">Erreichbarkeit prüfen</span> — für alle bevorstehenden Favoriten (nächste 4 Std.) wird die ÖPNV-Fahrzeit berechnet.
-              </li>
+              <li><span className="text-zinc-300">Favoriten setzen</span> — im Programm-Tab Acts mit ♥ markieren.</li>
+              <li><span className="text-zinc-300">Standort erlauben</span> — Plan B fragt einmalig nach GPS.</li>
+              <li><span className="text-zinc-300">Erreichbarkeit prüfen</span> — ÖPNV-Fahrzeit zu bevorstehenden Favoriten (nächste 4 Std.).</li>
             </ol>
             <div className="flex flex-col gap-1 pt-1 text-xs">
-              <div className="flex items-center gap-2">
-                <span className="w-16 rounded px-1.5 py-0.5 text-center font-medium bg-green-950/60 text-green-400">grün</span>
-                <span className="text-zinc-400">≥ 15 min Puffer — du schaffst es entspannt</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="w-16 rounded px-1.5 py-0.5 text-center font-medium bg-yellow-950/60 text-yellow-400">gelb</span>
-                <span className="text-zinc-400">0–14 min Puffer — knapp, aber möglich</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="w-16 rounded px-1.5 py-0.5 text-center font-medium bg-red-950/60 text-red-400">rot</span>
-                <span className="text-zinc-400">zu wenig Zeit — such dir einen Plan B!</span>
-              </div>
+              {[
+                { cls: "bg-green-950/60 text-green-400", label: "grün", text: "≥ 15 min Puffer — entspannt erreichbar" },
+                { cls: "bg-yellow-950/60 text-yellow-400", label: "gelb", text: "0–14 min Puffer — knapp, aber möglich" },
+                { cls: "bg-red-950/60 text-red-400", label: "rot", text: "zu wenig Zeit — such Plan B!" },
+              ].map(({ cls, label, text }) => (
+                <div key={label} className="flex items-center gap-2">
+                  <span className={`w-14 rounded px-1.5 py-0.5 text-center font-medium ${cls}`}>{label}</span>
+                  <span className="text-zinc-400">{text}</span>
+                </div>
+              ))}
             </div>
             <p className="text-xs text-zinc-500">
-              Fahrzeiten werden alle 3 Minuten aktualisiert. Tippe auf <strong className="text-zinc-400">Maps ↗</strong> für die ÖPNV-Route zum Venue.
+              Fahrzeiten alle 3 min aktualisiert. <strong className="text-zinc-400">Maps ↗</strong> öffnet die ÖPNV-Route.
             </p>
           </div>
         )}
 
         {/* Location status */}
-        <div className="flex items-center gap-2 text-xs">
-          {geoStatus === "loading" && (
-            <span className="text-zinc-500">⟳ Standort wird ermittelt…</span>
-          )}
+        <div className="text-xs">
+          {geoStatus === "loading" && <span className="text-zinc-500">⟳ Standort wird ermittelt…</span>}
           {geoStatus === "success" && (
-            <span className="text-green-500">● Standort aktiv {fetching && "· lädt…"}</span>
+            <span className="text-green-500">● Standort aktiv{fetching ? " · lädt…" : ""}</span>
           )}
           {geoStatus === "error" && (
             <button onClick={retry} className="text-yellow-500 underline">
@@ -281,31 +290,33 @@ export function PlanBView({
       {/* Upcoming entries */}
       <div className="px-4">
         {upcomingFavorites.length === 0 ? (
-          <div className="mt-6 rounded-lg border border-zinc-800 bg-zinc-900 p-4 text-center">
+          <div className="mt-4 rounded-lg border border-zinc-800 bg-zinc-900 p-4 text-center">
             <p className="text-sm text-zinc-400">
               Keine Favoriten in den nächsten {LOOKAHEAD_HOURS} Stunden.
             </p>
+            {simActive && (
+              <p className="mt-1 text-xs text-zinc-600">
+                Andere Uhrzeit wählen oder mehr Favoriten setzen.
+              </p>
+            )}
           </div>
         ) : (
           <div className="mt-2 flex flex-col gap-3">
             {entries.map(({ appearance: a, location: loc, minutesUntilStart, travelMinutes, bufferMinutes, status }) => (
-              <div
-                key={a.id}
-                className={`rounded-xl border px-4 py-3 ${statusColor(status)}`}
-              >
+              <div key={a.id} className={`rounded-xl border px-4 py-3 ${statusColor(status)}`}>
                 <div className="flex items-start justify-between gap-2">
-                  <div className="flex-1">
-                    <div className="text-sm font-semibold text-zinc-100 leading-tight">{a.band}</div>
+                  <div className="flex-1 min-w-0">
+                    <div className="text-sm font-semibold text-zinc-100 leading-tight truncate">{a.band}</div>
                     <div className="mt-0.5 text-xs text-zinc-400">
-                      {a.time} · {a.location}
+                      {fmtTime(a.time)} · {a.location}
                     </div>
-                    {travelMinutes !== null && (
-                      <div className="mt-1 text-xs text-zinc-500">
-                        {travelMinutes} min Fahrt · noch {minutesUntilStart} min
-                      </div>
-                    )}
+                    <div className="mt-1 text-xs text-zinc-500">
+                      {travelMinutes !== null
+                        ? `${travelMinutes} min Fahrt · noch ${minutesUntilStart} min`
+                        : `noch ${minutesUntilStart} min`}
+                    </div>
                   </div>
-                  <div className="flex flex-col items-end gap-1.5">
+                  <div className="flex shrink-0 flex-col items-end gap-1.5">
                     <span className={`text-sm font-bold ${statusColor(status).split(" ")[0]}`}>
                       {statusLabel(status, bufferMinutes)}
                     </span>
@@ -315,7 +326,6 @@ export function PlanBView({
                         target="_blank"
                         rel="noopener noreferrer"
                         className="rounded-full bg-zinc-800 px-2 py-0.5 text-xs text-zinc-300 hover:bg-zinc-700"
-                        onClick={(e) => e.stopPropagation()}
                       >
                         Maps ↗
                       </a>
@@ -330,15 +340,11 @@ export function PlanBView({
         {/* Later favorites */}
         {laterFavorites.length > 0 && (
           <div className="mt-6">
-            <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-zinc-500">
-              Später
-            </p>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-zinc-500">Später</p>
             {laterFavorites.map((a) => (
               <div key={a.id} className="flex items-center gap-3 border-t border-zinc-800/50 py-2">
-                <span className="w-10 shrink-0 text-xs font-mono text-zinc-600">
-                  {a.time.replace(" Uhr", "")}
-                </span>
-                <span className="flex-1 text-sm text-zinc-400">{a.band}</span>
+                <span className="w-11 shrink-0 text-xs font-mono text-zinc-600">{fmtTime(a.time)}</span>
+                <span className="flex-1 text-sm text-zinc-400 truncate">{a.band}</span>
                 <span className="text-xs text-zinc-600">{a.date.slice(0, 5)}</span>
               </div>
             ))}
