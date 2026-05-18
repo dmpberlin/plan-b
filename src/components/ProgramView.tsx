@@ -209,8 +209,8 @@ export function ProgramView({
                               : "bg-zinc-900 hover:bg-zinc-800"
                           }`}
                         >
-                          <span className="w-10 shrink-0 text-xs font-mono text-zinc-500">
-                            {act.time.replace(" Uhr", "")}
+                          <span className="w-11 shrink-0 text-xs font-mono text-zinc-500">
+                            {act.time.replace(/\s*Uhr$/i, "").replace(".", ":")}
                           </span>
                           <span className="flex-1 text-sm text-zinc-100 leading-tight">
                             {act.band}
