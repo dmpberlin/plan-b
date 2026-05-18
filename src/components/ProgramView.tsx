@@ -168,16 +168,29 @@ export function ProgramView({
 
               {groups.map(([locName, acts]) => {
                 const loc = locationByAlias.get(locName);
+                const mapsUrl = loc
+                  ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(loc.address)}`
+                  : null;
                 return (
-                  <div key={locName} className="mt-4">
-                    <div className="mb-2 flex items-center gap-2">
-                      <span className="text-xs font-semibold uppercase tracking-wide text-zinc-400">
+                  <div key={locName} className="mt-5">
+                    <div className="mb-2">
+                      <span className="text-sm font-semibold text-zinc-200">
                         {locationShort(locName)}
                       </span>
-                      {loc && (
-                        <span className="text-xs text-zinc-600">
-                          {loc.address.split(",")[0]}
-                        </span>
+                      {loc && mapsUrl && (
+                        <a
+                          href={mapsUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="mt-0.5 flex items-center gap-1 text-xs text-zinc-500 hover:text-zinc-300"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          <svg className="h-3 w-3 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                          </svg>
+                          {loc.address}
+                        </a>
                       )}
                     </div>
                     <div className="flex flex-col gap-1">
