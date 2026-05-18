@@ -72,6 +72,26 @@ export function PlanBView({
   const [showHelp, setShowHelp] = useState(false);
   const [manualLocationId, setManualLocationId] = useState<string>("");
 
+  // Restore persisted simulation + location state on mount
+  useEffect(() => {
+    try {
+      const active = localStorage.getItem("planb-sim-active") === "1";
+      const date   = localStorage.getItem("planb-sim-date")   || SIM_DATES[0].iso;
+      const time   = localStorage.getItem("planb-sim-time")   || "17:00";
+      const locId  = localStorage.getItem("planb-manual-loc") || "";
+      setSimActive(active);
+      setSimDate(date);
+      setSimTimeVal(time);
+      setManualLocationId(locId);
+    } catch { /* storage unavailable */ }
+  }, []);
+
+  // Persist whenever values change
+  useEffect(() => { try { localStorage.setItem("planb-sim-active", simActive ? "1" : "0"); } catch {} }, [simActive]);
+  useEffect(() => { try { localStorage.setItem("planb-sim-date",   simDate);               } catch {} }, [simDate]);
+  useEffect(() => { try { localStorage.setItem("planb-sim-time",   simTimeVal);             } catch {} }, [simTimeVal]);
+  useEffect(() => { try { localStorage.setItem("planb-manual-loc", manualLocationId);       } catch {} }, [manualLocationId]);
+
   const activePosition = useMemo(() => {
     if (manualLocationId) {
       const m = MANUAL_LOCATIONS.find((l) => l.id === manualLocationId);
