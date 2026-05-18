@@ -1,0 +1,90 @@
+[
+  {
+    "id": "agra",
+    "name": "agra",
+    "address": "Bornaische Straße 210, 04279 Leipzig",
+    "lat": 51.2825,
+    "lng": 12.3838,
+    "aliases": ["agra", "agra Hall 4.2", "agra-Halle 4.2"]
+  },
+  {
+    "id": "felsenkeller",
+    "name": "Felsenkeller",
+    "address": "Karl-Heine-Straße 32, 04229 Leipzig",
+    "lat": 51.3333,
+    "lng": 12.3305,
+    "aliases": ["Felsenkeller"]
+  },
+  {
+    "id": "haus-leipzig",
+    "name": "Haus Leipzig",
+    "address": "Elsterstraße 22, 04109 Leipzig",
+    "lat": 51.3387,
+    "lng": 12.3640,
+    "aliases": ["Haus Leipzig"]
+  },
+  {
+    "id": "torhaus-dolitz",
+    "name": "Heidnisches Dorf / Torhaus Dölitz",
+    "address": "Helenenstraße 24, 04279 Leipzig",
+    "lat": 51.2819,
+    "lng": 12.4063,
+    "aliases": ["Heidnisches Dorf / Torhaus Dölitz"]
+  },
+  {
+    "id": "kirchenruine-wachau",
+    "name": "Kirchenruine Wachau",
+    "address": "Kirchplatz 1, Wachau",
+    "lat": 51.2620,
+    "lng": 12.4639,
+    "aliases": ["Kirchenruine Wachau"]
+  },
+  {
+    "id": "moritzbastei",
+    "name": "Moritzbastei",
+    "address": "Universitätsstraße 9, 04109 Leipzig",
+    "lat": 51.3397,
+    "lng": 12.3805,
+    "aliases": ["Moritzbastei"]
+  },
+  {
+    "id": "parkschloss",
+    "name": "Parkschloß",
+    "address": "Im Dölitzer Holz 20, 04279 Leipzig",
+    "lat": 51.2803,
+    "lng": 12.4088,
+    "aliases": ["Parkschloß - Ballsaal", "Parkschloß - Barocksaal"]
+  },
+  {
+    "id": "peterskirche",
+    "name": "Peterskirche",
+    "address": "Schletterstraße 5, 04107 Leipzig",
+    "lat": 51.3345,
+    "lng": 12.3772,
+    "aliases": ["Peterskirche"]
+  },
+  {
+    "id": "stadtbad",
+    "name": "Stadtbad",
+    "address": "Eutritzscher Straße 21, 04105 Leipzig",
+    "lat": 51.3581,
+    "lng": 12.3754,
+    "aliases": ["Stadtbad"]
+  },
+  {
+    "id": "taeubchenthal",
+    "name": "Täubchenthal",
+    "address": "Wachsmuthstraße 1, 04229 Leipzig",
+    "lat": 51.3282,
+    "lng": 12.3269,
+    "aliases": ["Täubchenthal"]
+  },
+  {
+    "id": "volkspalast",
+    "name": "Volkspalast",
+    "address": "Puschstraße 10, 04103 Leipzig",
+    "lat": 51.3691,
+    "lng": 12.3531,
+    "aliases": ["Volkspalast Kantine", "Volkspalast Kuppelhalle"]
+  }
+]
