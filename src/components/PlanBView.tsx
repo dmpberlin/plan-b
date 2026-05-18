@@ -39,6 +39,8 @@ export function PlanBView({
   const [travelTimes, setTravelTimes] = useState<Record<string, number | null>>({});
   const [now, setNow] = useState(() => new Date());
   const [fetching, setFetching] = useState(false);
+  const [simTime, setSimTime] = useState<string>("");
+  const [simActive, setSimActive] = useState(false);
 
   const locationByAlias = useMemo(() => {
     const map = new Map<string, Location>();
@@ -48,11 +50,22 @@ export function PlanBView({
     return map;
   }, [locations]);
 
-  // Update clock every 30s
+  // Update clock every 30s (skipped when simulation is active)
   useEffect(() => {
+    if (simActive) return;
     const t = setInterval(() => setNow(new Date()), 30_000);
     return () => clearInterval(t);
-  }, []);
+  }, [simActive]);
+
+  // Apply simulated time
+  useEffect(() => {
+    if (simActive && simTime) {
+      const parsed = new Date(simTime);
+      if (!isNaN(parsed.getTime())) setNow(parsed);
+    } else if (!simActive) {
+      setNow(new Date());
+    }
+  }, [simActive, simTime]);
 
   const favoriteAppearances = useMemo(() => {
     if (!loaded) return [];
@@ -169,10 +182,38 @@ export function PlanBView({
       <div className="px-4 pb-2 pt-4">
         <div className="mb-1 flex items-center justify-between">
           <h1 className="text-lg font-semibold text-zinc-100">Plan B</h1>
-          <span className="text-xs text-zinc-500">
-            {now.toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" })} Uhr
-          </span>
+          <div className="flex items-center gap-2">
+            <span className={`text-xs font-mono ${simActive ? "text-amber-400" : "text-zinc-500"}`}>
+              {now.toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit" })}{" "}
+              {now.toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" })}
+            </span>
+            <button
+              onClick={() => setSimActive((v) => !v)}
+              title="Zeitsimulation"
+              className={`rounded px-1.5 py-0.5 text-xs transition-colors ${
+                simActive
+                  ? "bg-amber-900/60 text-amber-400"
+                  : "bg-zinc-800 text-zinc-500 hover:text-zinc-300"
+              }`}
+            >
+              ⏱
+            </button>
+          </div>
         </div>
+
+        {simActive && (
+          <div className="mb-2 flex items-center gap-2 rounded-lg border border-amber-800/50 bg-amber-950/30 px-3 py-2">
+            <span className="text-xs text-amber-400 shrink-0">Simulation</span>
+            <input
+              type="datetime-local"
+              value={simTime}
+              onChange={(e) => setSimTime(e.target.value)}
+              min="2026-05-22T00:00"
+              max="2026-05-26T06:00"
+              className="flex-1 bg-transparent text-xs text-amber-200 outline-none [color-scheme:dark]"
+            />
+          </div>
+        )}
 
         {/* Location status */}
         <div className="flex items-center gap-2 text-xs">
