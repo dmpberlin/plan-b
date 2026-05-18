@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef, useEffect, useCallback } from "react";
 import { Appearance, Location } from "@/types";
 import { useFavorites } from "@/hooks/useFavorites";
 
@@ -28,8 +28,10 @@ export function ProgramView({
   const [activeDay, setActiveDay] = useState(DAYS[0].date);
   const [search, setSearch] = useState("");
   const { isFavorite, toggle, loaded } = useFavorites();
+  const dayRefs = useRef<Record<string, HTMLDivElement | null>>({});
+  const isScrollingRef = useRef(false);
 
-  const locationById = useMemo(() => {
+  const locationByAlias = useMemo(() => {
     const map = new Map<string, Location>();
     for (const loc of locations) {
       for (const alias of loc.aliases) map.set(alias, loc);
@@ -37,29 +39,58 @@ export function ProgramView({
     return map;
   }, [locations]);
 
-  const filtered = useMemo(() => {
-    const dayActs = appearances.filter((a) => a.date === activeDay);
-    if (!search.trim()) return dayActs;
-    const q = search.toLowerCase();
-    return dayActs.filter(
-      (a) =>
-        a.band.toLowerCase().includes(q) ||
-        a.location.toLowerCase().includes(q)
-    );
-  }, [appearances, activeDay, search]);
+  // Group all appearances by day → location → acts
+  const byDay = useMemo(() => {
+    const q = search.trim().toLowerCase();
+    return DAYS.map(({ date }) => {
+      const dayActs = appearances.filter((a) => {
+        if (a.date !== date) return false;
+        if (!q) return true;
+        return a.band.toLowerCase().includes(q) || a.location.toLowerCase().includes(q);
+      });
+      const locMap = new Map<string, Appearance[]>();
+      for (const a of dayActs) {
+        const arr = locMap.get(a.location) ?? [];
+        arr.push(a);
+        locMap.set(a.location, arr);
+      }
+      for (const arr of locMap.values())
+        arr.sort((a, b) => a.isoDatetime.localeCompare(b.isoDatetime));
+      return {
+        date,
+        groups: [...locMap.entries()].sort(([a], [b]) => a.localeCompare(b)),
+      };
+    });
+  }, [appearances, search]);
 
-  // Group by location
-  const grouped = useMemo(() => {
-    const map = new Map<string, Appearance[]>();
-    for (const a of filtered) {
-      const arr = map.get(a.location) ?? [];
-      arr.push(a);
-      map.set(a.location, arr);
-    }
-    // Sort each group by time
-    for (const [, arr] of map) arr.sort((a, b) => a.isoDatetime.localeCompare(b.isoDatetime));
-    return [...map.entries()].sort(([a], [b]) => a.localeCompare(b));
-  }, [filtered]);
+  // IntersectionObserver: update active tab as day headers scroll into view
+  useEffect(() => {
+    const observers: IntersectionObserver[] = [];
+    DAYS.forEach(({ date }) => {
+      const el = dayRefs.current[date];
+      if (!el) return;
+      const obs = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting && !isScrollingRef.current) {
+            setActiveDay(date);
+          }
+        },
+        { rootMargin: "-80px 0px -60% 0px", threshold: 0 }
+      );
+      obs.observe(el);
+      observers.push(obs);
+    });
+    return () => observers.forEach((o) => o.disconnect());
+  }, [byDay]);
+
+  const scrollToDay = useCallback((date: string) => {
+    const el = dayRefs.current[date];
+    if (!el) return;
+    setActiveDay(date);
+    isScrollingRef.current = true;
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+    setTimeout(() => { isScrollingRef.current = false; }, 800);
+  }, []);
 
   const favoriteCount = useMemo(
     () => appearances.filter((a) => isFavorite(a.id)).length,
@@ -67,9 +98,14 @@ export function ProgramView({
     [appearances, isFavorite, loaded]
   );
 
+  const totalResults = useMemo(
+    () => byDay.reduce((sum, d) => sum + d.groups.reduce((s, [, a]) => s + a.length, 0), 0),
+    [byDay]
+  );
+
   return (
     <div className="flex flex-col">
-      {/* Header */}
+      {/* Sticky header */}
       <div className="sticky top-0 z-10 bg-zinc-950 pb-2 pt-4">
         <div className="px-4">
           <div className="mb-3 flex items-center justify-between">
@@ -80,7 +116,6 @@ export function ProgramView({
               </span>
             )}
           </div>
-          {/* Search */}
           <input
             type="search"
             placeholder="Suche Künstler oder Location…"
@@ -88,12 +123,12 @@ export function ProgramView({
             onChange={(e) => setSearch(e.target.value)}
             className="mb-3 w-full rounded-lg border border-zinc-800 bg-zinc-900 px-3 py-2 text-sm text-zinc-100 placeholder-zinc-500 outline-none focus:border-zinc-600"
           />
-          {/* Day tabs */}
+          {/* Day tabs — now act as jump links */}
           <div className="flex gap-1">
             {DAYS.map((d) => (
               <button
                 key={d.date}
-                onClick={() => setActiveDay(d.date)}
+                onClick={() => scrollToDay(d.date)}
                 className={`flex-1 rounded-lg py-1.5 text-xs font-medium transition-colors ${
                   activeDay === d.date
                     ? "bg-rose-900 text-rose-100"
@@ -107,52 +142,74 @@ export function ProgramView({
         </div>
       </div>
 
-      {/* Acts */}
+      {/* All days in one continuous scroll */}
       <div className="px-4 pb-24">
-        {grouped.length === 0 && (
+        {search && totalResults === 0 && (
           <p className="mt-8 text-center text-sm text-zinc-500">
             Keine Auftritte gefunden.
           </p>
         )}
-        {grouped.map(([locName, acts]) => {
-          const loc = locationById.get(locName);
+
+        {byDay.map(({ date, groups }) => {
+          const day = DAYS.find((d) => d.date === date)!;
+          if (search && groups.length === 0) return null;
           return (
-            <div key={locName} className="mt-4">
-              <div className="mb-2 flex items-center gap-2">
-                <span className="text-xs font-semibold uppercase tracking-wide text-zinc-400">
-                  {locationShort(locName)}
-                </span>
-                {loc && (
-                  <span className="text-xs text-zinc-600">{loc.address.split(",")[0]}</span>
-                )}
+            <div
+              key={date}
+              ref={(el) => { dayRefs.current[date] = el; }}
+              // scroll-mt so sticky header doesn't cover section
+              className="scroll-mt-36"
+            >
+              {/* Day separator */}
+              <div className="mt-6 mb-3 flex items-center gap-3">
+                <span className="text-sm font-bold text-zinc-200">{day.label}</span>
+                <div className="h-px flex-1 bg-zinc-800" />
               </div>
-              <div className="flex flex-col gap-1">
-                {acts.map((act) => (
-                  <button
-                    key={act.id}
-                    onClick={() => toggle(act.id)}
-                    className={`flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left transition-colors ${
-                      isFavorite(act.id)
-                        ? "bg-rose-950/60 ring-1 ring-rose-800"
-                        : "bg-zinc-900 hover:bg-zinc-800"
-                    }`}
-                  >
-                    <span className="w-10 shrink-0 text-xs font-mono text-zinc-500">
-                      {act.time.replace(" Uhr", "")}
-                    </span>
-                    <span className="flex-1 text-sm text-zinc-100 leading-tight">
-                      {act.band}
-                    </span>
-                    <span
-                      className={`text-base transition-transform ${
-                        isFavorite(act.id) ? "scale-110 text-rose-400" : "text-zinc-700"
-                      }`}
-                    >
-                      ♥
-                    </span>
-                  </button>
-                ))}
-              </div>
+
+              {groups.map(([locName, acts]) => {
+                const loc = locationByAlias.get(locName);
+                return (
+                  <div key={locName} className="mt-4">
+                    <div className="mb-2 flex items-center gap-2">
+                      <span className="text-xs font-semibold uppercase tracking-wide text-zinc-400">
+                        {locationShort(locName)}
+                      </span>
+                      {loc && (
+                        <span className="text-xs text-zinc-600">
+                          {loc.address.split(",")[0]}
+                        </span>
+                      )}
+                    </div>
+                    <div className="flex flex-col gap-1">
+                      {acts.map((act) => (
+                        <button
+                          key={act.id}
+                          onClick={() => toggle(act.id)}
+                          className={`flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left transition-colors ${
+                            isFavorite(act.id)
+                              ? "bg-rose-950/60 ring-1 ring-rose-800"
+                              : "bg-zinc-900 hover:bg-zinc-800"
+                          }`}
+                        >
+                          <span className="w-10 shrink-0 text-xs font-mono text-zinc-500">
+                            {act.time.replace(" Uhr", "")}
+                          </span>
+                          <span className="flex-1 text-sm text-zinc-100 leading-tight">
+                            {act.band}
+                          </span>
+                          <span
+                            className={`text-base transition-transform ${
+                              isFavorite(act.id) ? "scale-110 text-rose-400" : "text-zinc-700"
+                            }`}
+                          >
+                            ♥
+                          </span>
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           );
         })}
