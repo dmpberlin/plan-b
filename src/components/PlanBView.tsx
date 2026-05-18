@@ -50,6 +50,13 @@ function fmtTime(time: string) {
   return time.replace(/\s*Uhr$/i, "").replace(".", ":");
 }
 
+function parseLocalDatetime(s: string): Date {
+  const [datePart, timePart] = s.split("T");
+  const [year, month, day] = datePart.split("-").map(Number);
+  const [hours, minutes, seconds] = timePart.split(":").map(Number);
+  return new Date(year, month - 1, day, hours, minutes, seconds || 0);
+}
+
 function mapsLink(origin: { lat: number; lng: number }, dest: Location) {
   return `https://www.google.com/maps/dir/?api=1&origin=${origin.lat},${origin.lng}&destination=${dest.lat},${dest.lng}&travelmode=transit`;
 }
@@ -121,7 +128,7 @@ export function PlanBView({
       setNow(new Date());
       return;
     }
-    const parsed = new Date(`${simDate}T${simTimeVal}:00`);
+    const parsed = parseLocalDatetime(`${simDate}T${simTimeVal}:00`);
     if (!isNaN(parsed.getTime())) setNow(parsed);
   }, [simActive, simDate, simTimeVal]);
 
@@ -135,7 +142,7 @@ export function PlanBView({
   const nearFavorites = useMemo(() => {
     const cutoff = new Date(now.getTime() + LOOKAHEAD_HOURS * 3_600_000);
     return favoriteAppearances.filter((a) => {
-      const start = new Date(a.isoDatetime);
+      const start = parseLocalDatetime(a.isoDatetime);
       return start > now && start <= cutoff;
     });
   }, [favoriteAppearances, now]);
@@ -143,7 +150,7 @@ export function PlanBView({
   // All future favorites (shown in full list)
   const upcomingFavorites = useMemo(() => {
     return favoriteAppearances
-      .filter((a) => new Date(a.isoDatetime) > now)
+      .filter((a) => parseLocalDatetime(a.isoDatetime) > now)
       .sort((a, b) => a.isoDatetime.localeCompare(b.isoDatetime));
   }, [favoriteAppearances, now]);
 
@@ -158,7 +165,7 @@ export function PlanBView({
       }
     }
     return result;
-  }, [upcomingFavorites, locationByAlias]);
+  }, [nearFavorites, locationByAlias]);
 
   const fetchTravelTimes = useCallback(async () => {
     if (!activePosition || neededLocations.length === 0) return;
@@ -196,7 +203,7 @@ export function PlanBView({
   const entries: PlanBEntry[] = useMemo(() => {
     return nearFavorites.map((a) => {
       const loc = locationByAlias.get(a.location);
-      const start = new Date(a.isoDatetime);
+      const start = parseLocalDatetime(a.isoDatetime);
       const minutesUntilStart = Math.floor((start.getTime() - now.getTime()) / 60_000);
       const travelSeconds = loc ? (travelTimes[loc.id] ?? null) : null;
       const travelMinutes = travelSeconds !== null ? Math.ceil(travelSeconds / 60) : null;
@@ -211,12 +218,12 @@ export function PlanBView({
 
       return { appearance: a, location: loc!, minutesUntilStart, travelMinutes, bufferMinutes, status };
     }).sort((a, b) => a.appearance.isoDatetime.localeCompare(b.appearance.isoDatetime));
-  }, [upcomingFavorites, travelTimes, now, locationByAlias]);
+  }, [nearFavorites, travelTimes, now, locationByAlias]);
 
   // Acts beyond the travel-time window — shown as plain list
   const laterFavorites = useMemo(() => {
     const cutoff = new Date(now.getTime() + LOOKAHEAD_HOURS * 3_600_000);
-    return upcomingFavorites.filter((a) => new Date(a.isoDatetime) > cutoff);
+    return upcomingFavorites.filter((a) => parseLocalDatetime(a.isoDatetime) > cutoff);
   }, [upcomingFavorites, now]);
 
   if (!loaded) return null;
