@@ -9,6 +9,22 @@ import { useGeolocation } from "@/hooks/useGeolocation";
 const REFRESH_INTERVAL_MS = 3 * 60 * 1000;
 const LOOKAHEAD_HOURS = 4;
 
+const MANUAL_LOCATIONS = [
+  { id: "hbf",          label: "Leipzig Hauptbahnhof",    lat: 51.3456, lng: 12.3820 },
+  { id: "markt",        label: "Leipzig Markt",            lat: 51.3394, lng: 12.3750 },
+  { id: "agra",         label: "agra",                     lat: 51.2825, lng: 12.3838 },
+  { id: "felsenkeller", label: "Felsenkeller",             lat: 51.3333, lng: 12.3305 },
+  { id: "haus-leipzig", label: "Haus Leipzig",             lat: 51.3387, lng: 12.3640 },
+  { id: "moritzbastei", label: "Moritzbastei",             lat: 51.3397, lng: 12.3805 },
+  { id: "parkschloss",  label: "Parkschloß",               lat: 51.2803, lng: 12.4088 },
+  { id: "peterskirche", label: "Peterskirche",             lat: 51.3345, lng: 12.3772 },
+  { id: "stadtbad",     label: "Stadtbad",                 lat: 51.3581, lng: 12.3754 },
+  { id: "taeubchenthal",label: "Täubchenthal",             lat: 51.3282, lng: 12.3269 },
+  { id: "torhaus",      label: "Torhaus Dölitz",           lat: 51.2819, lng: 12.4063 },
+  { id: "volkspalast",  label: "Volkspalast",              lat: 51.3691, lng: 12.3531 },
+  { id: "wachau",       label: "Kirchenruine Wachau",      lat: 51.2620, lng: 12.4639 },
+];
+
 const SIM_DATES = [
   { label: "Fr 22.05.", iso: "2026-05-22" },
   { label: "Sa 23.05.", iso: "2026-05-23" },
@@ -54,6 +70,15 @@ export function PlanBView({
   const [simDate, setSimDate] = useState(SIM_DATES[0].iso);
   const [simTimeVal, setSimTimeVal] = useState("17:00");
   const [showHelp, setShowHelp] = useState(false);
+  const [manualLocationId, setManualLocationId] = useState<string>("");
+
+  const activePosition = useMemo(() => {
+    if (manualLocationId) {
+      const m = MANUAL_LOCATIONS.find((l) => l.id === manualLocationId);
+      if (m) return { lat: m.lat, lng: m.lng };
+    }
+    return position;
+  }, [manualLocationId, position]);
 
   const locationByAlias = useMemo(() => {
     const map = new Map<string, Location>();
@@ -116,14 +141,14 @@ export function PlanBView({
   }, [upcomingFavorites, locationByAlias]);
 
   const fetchTravelTimes = useCallback(async () => {
-    if (!position || neededLocations.length === 0) return;
+    if (!activePosition || neededLocations.length === 0) return;
     setFetching(true);
     try {
       const res = await fetch("/api/travel-times", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          origin: position,
+          origin: activePosition,
           destinations: neededLocations.map((l) => ({
             locationId: l.id,
             lat: l.lat,
@@ -140,7 +165,7 @@ export function PlanBView({
     } finally {
       setFetching(false);
     }
-  }, [position, neededLocations, now]);
+  }, [activePosition, neededLocations, now]);
 
   useEffect(() => {
     fetchTravelTimes();
@@ -279,17 +304,41 @@ export function PlanBView({
           </div>
         )}
 
-        {/* Location status */}
-        <div className="text-xs">
-          {geoStatus === "loading" && <span className="text-zinc-500">⟳ Standort wird ermittelt…</span>}
-          {geoStatus === "success" && (
-            <span className="text-green-500">● Standort aktiv{fetching ? " · lädt…" : ""}</span>
+        {/* Location picker */}
+        <div className="flex items-center gap-2">
+          {/* GPS status indicator */}
+          {!manualLocationId && (
+            <div className="text-xs shrink-0">
+              {geoStatus === "loading" && <span className="text-zinc-500">⟳ GPS…</span>}
+              {geoStatus === "success" && (
+                <span className="text-green-500">● GPS{fetching ? " · lädt…" : ""}</span>
+              )}
+              {geoStatus === "error" && (
+                <button onClick={retry} className="text-yellow-500">⚠ GPS fehlgeschlagen</button>
+              )}
+            </div>
           )}
-          {geoStatus === "error" && (
-            <button onClick={retry} className="text-yellow-500 underline">
-              ⚠ {geoError} Erneut versuchen
-            </button>
-          )}
+
+          {/* Manual location select */}
+          <select
+            value={manualLocationId}
+            onChange={(e) => setManualLocationId(e.target.value)}
+            className="flex-1 rounded-lg border border-zinc-800 bg-zinc-900 px-2 py-1.5 text-xs text-zinc-300 outline-none"
+          >
+            <option value="">
+              {geoStatus === "success" ? "📍 GPS aktiv" : "Standort manuell wählen…"}
+            </option>
+            <optgroup label="Leipzig">
+              {MANUAL_LOCATIONS.slice(0, 2).map((l) => (
+                <option key={l.id} value={l.id}>{l.label}</option>
+              ))}
+            </optgroup>
+            <optgroup label="WGT-Venues">
+              {MANUAL_LOCATIONS.slice(2).map((l) => (
+                <option key={l.id} value={l.id}>{l.label}</option>
+              ))}
+            </optgroup>
+          </select>
         </div>
       </div>
 
@@ -319,9 +368,9 @@ export function PlanBView({
                     <span className={`text-sm font-bold ${statusColor(status).split(" ")[0]}`}>
                       {statusLabel(status, bufferMinutes)}
                     </span>
-                    {loc && position && (
+                    {loc && activePosition && (
                       <a
-                        href={mapsLink(position, loc)}
+                        href={mapsLink(activePosition, loc)}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="rounded-full bg-zinc-800 px-2 py-0.5 text-xs text-zinc-300 hover:bg-zinc-700"
