@@ -306,28 +306,43 @@ export function PlanBView({
 
         {/* Help panel */}
         {showHelp && (
-          <div className="mb-3 rounded-xl border border-zinc-700 bg-zinc-900 px-4 py-3 space-y-2">
+          <div className="mb-3 rounded-xl border border-zinc-700 bg-zinc-900 px-4 py-3 space-y-3">
             <p className="text-sm font-semibold text-zinc-100">So funktioniert Plan B</p>
-            <ol className="list-decimal list-inside space-y-1.5 text-xs text-zinc-400 marker:text-zinc-600">
-              <li><span className="text-zinc-300">Favoriten setzen</span> — im Programm-Tab Acts mit ♥ markieren.</li>
-              <li><span className="text-zinc-300">Standort erlauben</span> — Plan B fragt einmalig nach GPS.</li>
-              <li><span className="text-zinc-300">Erreichbarkeit prüfen</span> — ÖPNV-Fahrzeit zu bevorstehenden Favoriten (nächste 4 Std.).</li>
+
+            <ol className="list-decimal list-inside space-y-2 text-xs text-zinc-400 marker:text-zinc-600">
+              <li>
+                <span className="text-zinc-300">Favoriten setzen</span>
+                <span className="ml-1">— im Programm-Tab Acts mit ♥ markieren.</span>
+              </li>
+              <li>
+                <span className="text-zinc-300">Standort wählen</span>
+                <span className="ml-1">— GPS erlauben oder manuell einen Startpunkt auswählen.</span>
+              </li>
+              <li>
+                <span className="text-zinc-300">Erreichbarkeit checken</span>
+                <span className="ml-1">— Plan B berechnet per ÖPNV, ob du deine nächsten Favoriten (4‑Std.-Fenster) noch rechtzeitig erreichst.</span>
+              </li>
             </ol>
-            <div className="flex flex-col gap-1 pt-1 text-xs">
+
+            <div className="rounded-lg bg-zinc-800/60 px-3 py-2 space-y-1.5 text-xs">
               {[
-                { cls: "bg-green-950/60 text-green-400", label: "grün", text: "≥ 15 min Puffer — entspannt erreichbar" },
-                { cls: "bg-yellow-950/60 text-yellow-400", label: "gelb", text: "0–14 min Puffer — knapp, aber möglich" },
-                { cls: "bg-red-950/60 text-red-400", label: "rot", text: "zu wenig Zeit — such Plan B!" },
-              ].map(({ cls, label, text }) => (
-                <div key={label} className="flex items-center gap-2">
-                  <span className={`w-14 rounded px-1.5 py-0.5 text-center font-medium ${cls}`}>{label}</span>
-                  <span className="text-zinc-400">{text}</span>
+                { cls: "text-green-400", dot: "bg-green-500", text: "≥ 15 min Puffer — entspannt erreichbar" },
+                { cls: "text-yellow-400", dot: "bg-yellow-500", text: "0–14 min Puffer — knapp, beeil dich!" },
+                { cls: "text-red-400",   dot: "bg-red-500",    text: "Zu spät — lauf zur nächsten Alternative" },
+                { cls: "text-zinc-400",  dot: "bg-zinc-600",   text: "Fahrzeit noch nicht geladen" },
+              ].map(({ cls, dot, text }) => (
+                <div key={text} className="flex items-center gap-2">
+                  <span className={`h-2 w-2 shrink-0 rounded-full ${dot}`} />
+                  <span className={cls}>{text}</span>
                 </div>
               ))}
             </div>
-            <p className="text-xs text-zinc-500">
-              Fahrzeiten alle 3 min aktualisiert. <strong className="text-zinc-400">Maps ↗</strong> öffnet die ÖPNV-Route.
-            </p>
+
+            <div className="space-y-1 text-xs text-zinc-500">
+              <p><strong className="text-zinc-400">Maps ↗</strong> öffnet die ÖPNV-Route direkt in Google Maps.</p>
+              <p><strong className="text-zinc-400">⏱</strong> Zeitsimulation — teste beliebige Festival-Tage und Uhrzeiten.</p>
+              <p>Fahrzeiten werden alle 3 Minuten aktualisiert.</p>
+            </div>
           </div>
         )}
 
