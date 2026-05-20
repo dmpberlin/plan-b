@@ -5,7 +5,7 @@
     "address": "Bornaische Straße 210, 04279 Leipzig",
     "lat": 51.2825,
     "lng": 12.3838,
-    "aliases": ["agra", "agra Hall 4.2", "agra-Halle 4.2"]
+    "aliases": ["agra", "agra Hall 4.2", "agra-Halle 4.2", "agra-Gelände"]
   },
   {
     "id": "felsenkeller",
@@ -53,7 +53,7 @@
     "address": "Im Dölitzer Holz 20, 04279 Leipzig",
     "lat": 51.2803,
     "lng": 12.4088,
-    "aliases": ["Parkschloß - Ballsaal", "Parkschloß - Barocksaal"]
+    "aliases": ["Parkschloß - Ballsaal", "Parkschloß - Barocksaal", "Parkschloss - Ballsaal", "Parkschloss - Barocksaal"]
   },
   {
     "id": "peterskirche",

@@ -1,1426 +1,1434 @@
 [
   {
     "id": "1",
-    "band": "Ductape (TR)",
+    "band": "Das Ich (D)",
     "date": "22.05.2026",
-    "time": "17.00 Uhr",
-    "location": "Felsenkeller",
+    "time": "17.00 Uhr",
+    "location": "agra-Gelände",
     "isoDatetime": "2026-05-22T17:00:00"
   },
   {
     "id": "2",
+    "band": "Solar Fake (D)",
+    "date": "22.05.2026",
+    "time": "18.25 Uhr",
+    "location": "agra-Gelände",
+    "isoDatetime": "2026-05-22T18:25:00"
+  },
+  {
+    "id": "3",
+    "band": "Kim Wilde (UK)",
+    "date": "22.05.2026",
+    "time": "19.55 Uhr",
+    "location": "agra-Gelände",
+    "isoDatetime": "2026-05-22T19:55:00"
+  },
+  {
+    "id": "4",
+    "band": "Einstürzende Neubauten (D)",
+    "date": "22.05.2026",
+    "time": "21.20 Uhr",
+    "location": "agra-Gelände",
+    "isoDatetime": "2026-05-22T21:20:00"
+  },
+  {
+    "id": "5",
+    "band": "Anja Huwe / XMal Deutschland (D)",
+    "date": "22.05.2026",
+    "time": "23.20 Uhr",
+    "location": "agra-Gelände",
+    "isoDatetime": "2026-05-22T23:20:00"
+  },
+  {
+    "id": "6",
+    "band": "Kompromat (F)",
+    "date": "22.05.2026",
+    "time": "01.00 Uhr",
+    "location": "agra-Gelände",
+    "isoDatetime": "2026-05-22T01:00:00"
+  },
+  {
+    "id": "7",
+    "band": "Ductape (TR)",
+    "date": "22.05.2026",
+    "time": "17.00 Uhr",
+    "location": "Felsenkeller",
+    "isoDatetime": "2026-05-22T17:00:00"
+  },
+  {
+    "id": "8",
     "band": "Dlina Volny (BY)",
     "date": "22.05.2026",
-    "time": "18.10 Uhr",
+    "time": "18.10 Uhr",
     "location": "Felsenkeller",
     "isoDatetime": "2026-05-22T18:10:00"
   },
   {
-    "id": "3",
-    "band": "Minuit Machine (F)",
+    "id": "9",
+    "band": "Bragolin (NL)",
     "date": "22.05.2026",
-    "time": "19.30 Uhr",
+    "time": "19.30 Uhr",
     "location": "Felsenkeller",
     "isoDatetime": "2026-05-22T19:30:00"
   },
   {
-    "id": "4",
+    "id": "10",
     "band": "Ash Code (I)",
     "date": "22.05.2026",
-    "time": "21.00 Uhr",
+    "time": "21.00 Uhr",
     "location": "Felsenkeller",
     "isoDatetime": "2026-05-22T21:00:00"
   },
   {
-    "id": "5",
+    "id": "11",
     "band": "Scratch Massive (F)",
     "date": "22.05.2026",
-    "time": "22.30 Uhr",
+    "time": "22.30 Uhr",
     "location": "Felsenkeller",
     "isoDatetime": "2026-05-22T22:30:00"
   },
   {
-    "id": "6",
+    "id": "12",
     "band": "Unterschicht (D)",
     "date": "22.05.2026",
-    "time": "17.00 Uhr",
+    "time": "17.00 Uhr",
     "location": "Haus Leipzig",
     "isoDatetime": "2026-05-22T17:00:00"
   },
   {
-    "id": "7",
+    "id": "13",
     "band": "C-Lekktor (MEX)",
     "date": "22.05.2026",
-    "time": "18.20 Uhr",
+    "time": "18.20 Uhr",
     "location": "Haus Leipzig",
     "isoDatetime": "2026-05-22T18:20:00"
   },
   {
-    "id": "8",
+    "id": "14",
     "band": "Spit Mask (US/D)",
     "date": "22.05.2026",
-    "time": "19.40 Uhr",
+    "time": "19.40 Uhr",
     "location": "Haus Leipzig",
     "isoDatetime": "2026-05-22T19:40:00"
   },
   {
-    "id": "9",
+    "id": "15",
     "band": "Freakangel (EST)",
     "date": "22.05.2026",
-    "time": "21.00 Uhr",
+    "time": "21.00 Uhr",
     "location": "Haus Leipzig",
     "isoDatetime": "2026-05-22T21:00:00"
   },
   {
-    "id": "10",
+    "id": "16",
     "band": "Phosgore (D)",
     "date": "22.05.2026",
-    "time": "22.30 Uhr",
+    "time": "22.30 Uhr",
     "location": "Haus Leipzig",
     "isoDatetime": "2026-05-22T22:30:00"
   },
   {
-    "id": "11",
-    "band": "Bianca Stücker & Bruxas Solis (D)",
-    "date": "22.05.2026",
-    "time": "14.00 Uhr",
-    "location": "Heidnisches Dorf / Torhaus Dölitz",
-    "isoDatetime": "2026-05-22T14:00:00"
-  },
-  {
-    "id": "12",
+    "id": "17",
     "band": "Heimataerde (D)",
     "date": "22.05.2026",
-    "time": "15.30 Uhr",
+    "time": "15.30 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
     "isoDatetime": "2026-05-22T15:30:00"
   },
   {
-    "id": "13",
+    "id": "18",
     "band": "Erdling (D)",
     "date": "22.05.2026",
-    "time": "17.00 Uhr",
+    "time": "17.00 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
     "isoDatetime": "2026-05-22T17:00:00"
   },
   {
-    "id": "14",
+    "id": "19",
     "band": "Die Streuner (D)",
     "date": "22.05.2026",
-    "time": "18.40 Uhr",
+    "time": "18.40 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
     "isoDatetime": "2026-05-22T18:40:00"
   },
   {
-    "id": "15",
+    "id": "20",
     "band": "HRAFNGRIMR (F)",
     "date": "22.05.2026",
-    "time": "20.35 Uhr",
+    "time": "20.35 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
     "isoDatetime": "2026-05-22T20:35:00"
   },
   {
-    "id": "16",
+    "id": "21",
+    "band": "Feuerspektakel",
+    "date": "22.05.2026",
+    "time": "22.35 Uhr",
+    "location": "Heidnisches Dorf / Torhaus Dölitz",
+    "isoDatetime": "2026-05-22T22:35:00"
+  },
+  {
+    "id": "22",
     "band": "Destroy Me Again (D)",
     "date": "22.05.2026",
-    "time": "20.00 Uhr",
+    "time": "20.00 Uhr",
     "location": "Moritzbastei",
     "isoDatetime": "2026-05-22T20:00:00"
   },
   {
-    "id": "17",
+    "id": "23",
     "band": "Pol (NL)",
     "date": "22.05.2026",
-    "time": "21.00 Uhr",
+    "time": "21.00 Uhr",
     "location": "Moritzbastei",
     "isoDatetime": "2026-05-22T21:00:00"
   },
   {
-    "id": "18",
+    "id": "24",
     "band": "Wiegand (D)",
     "date": "22.05.2026",
-    "time": "22.00 Uhr",
+    "time": "22.00 Uhr",
     "location": "Moritzbastei",
     "isoDatetime": "2026-05-22T22:00:00"
   },
   {
-    "id": "19",
-    "band": "Black Dahlia (AUS)",
+    "id": "25",
+    "band": "Rina Pavar (D)",
     "date": "22.05.2026",
-    "time": "23.10 Uhr",
+    "time": "23.10 Uhr",
     "location": "Moritzbastei",
     "isoDatetime": "2026-05-22T23:10:00"
   },
   {
-    "id": "20",
-    "band": "Necrø (P)",
-    "date": "22.05.2026",
-    "time": "16.30 Uhr",
-    "location": "Stadtbad",
-    "isoDatetime": "2026-05-22T16:30:00"
-  },
-  {
-    "id": "21",
-    "band": "Tyske Ludder (D)",
-    "date": "22.05.2026",
-    "time": "17.50 Uhr",
-    "location": "Stadtbad",
-    "isoDatetime": "2026-05-22T17:50:00"
-  },
-  {
-    "id": "22",
-    "band": "Biomekkanik (S)",
-    "date": "22.05.2026",
-    "time": "19.10 Uhr",
-    "location": "Stadtbad",
-    "isoDatetime": "2026-05-22T19:10:00"
-  },
-  {
-    "id": "23",
-    "band": "Horskh (F)",
-    "date": "22.05.2026",
-    "time": "20.40 Uhr",
-    "location": "Stadtbad",
-    "isoDatetime": "2026-05-22T20:40:00"
-  },
-  {
-    "id": "24",
-    "band": "Rotersand (D)",
-    "date": "22.05.2026",
-    "time": "22.10 Uhr",
-    "location": "Stadtbad",
-    "isoDatetime": "2026-05-22T22:10:00"
-  },
-  {
-    "id": "25",
-    "band": "Voyna (D)",
-    "date": "22.05.2026",
-    "time": "17.30 Uhr",
-    "location": "Täubchenthal",
-    "isoDatetime": "2026-05-22T17:30:00"
-  },
-  {
     "id": "26",
-    "band": "Vlad In Tears (I)",
+    "band": "RAVE300 x WGT / The Moderna (D)",
     "date": "22.05.2026",
-    "time": "18.40 Uhr",
-    "location": "Täubchenthal",
-    "isoDatetime": "2026-05-22T18:40:00"
-  },
-  {
-    "id": "27",
-    "band": "Octavian Winters (US)",
-    "date": "22.05.2026",
-    "time": "20.00 Uhr",
-    "location": "Täubchenthal",
-    "isoDatetime": "2026-05-22T20:00:00"
-  },
-  {
-    "id": "28",
-    "band": "Rosegarden Funeral Party (USA)",
-    "date": "22.05.2026",
-    "time": "21.20 Uhr",
-    "location": "Täubchenthal",
-    "isoDatetime": "2026-05-22T21:20:00"
-  },
-  {
-    "id": "29",
-    "band": "Skeletal Family (UK)",
-    "date": "22.05.2026",
-    "time": "22.40 Uhr",
-    "location": "Täubchenthal",
-    "isoDatetime": "2026-05-22T22:40:00"
-  },
-  {
-    "id": "30",
-    "band": "Vrimuot (D)",
-    "date": "22.05.2026",
-    "time": "21.45 Uhr",
-    "location": "Volkspalast Kantine",
-    "isoDatetime": "2026-05-22T21:45:00"
-  },
-  {
-    "id": "31",
-    "band": "Arcana (S)",
-    "date": "22.05.2026",
-    "time": "18.00 Uhr",
-    "location": "Volkspalast Kuppelhalle",
-    "isoDatetime": "2026-05-22T18:00:00"
-  },
-  {
-    "id": "32",
-    "band": "Triarii (D)",
-    "date": "22.05.2026",
-    "time": "20.30 Uhr",
-    "location": "Volkspalast Kuppelhalle",
-    "isoDatetime": "2026-05-22T20:30:00"
-  },
-  {
-    "id": "33",
-    "band": "Kompromat (F)",
-    "date": "22.05.2026",
-    "time": "01.00 Uhr",
-    "location": "agra",
-    "isoDatetime": "2026-05-22T01:00:00"
-  },
-  {
-    "id": "34",
-    "band": "Das Ich (D)",
-    "date": "22.05.2026",
-    "time": "17.00 Uhr",
-    "location": "agra",
-    "isoDatetime": "2026-05-22T17:00:00"
-  },
-  {
-    "id": "35",
-    "band": "Solar Fake (D)",
-    "date": "22.05.2026",
-    "time": "18.25 Uhr",
-    "location": "agra",
-    "isoDatetime": "2026-05-22T18:25:00"
-  },
-  {
-    "id": "36",
-    "band": "Kim Wilde (UK)",
-    "date": "22.05.2026",
-    "time": "19.55 Uhr",
-    "location": "agra",
-    "isoDatetime": "2026-05-22T19:55:00"
-  },
-  {
-    "id": "37",
-    "band": "Einstürzende Neubauten (D)",
-    "date": "22.05.2026",
-    "time": "21.20 Uhr",
-    "location": "agra",
-    "isoDatetime": "2026-05-22T21:20:00"
-  },
-  {
-    "id": "38",
-    "band": "Anja Huwe / XMal Deutschland (D)",
-    "date": "22.05.2026",
-    "time": "23.20 Uhr",
-    "location": "agra",
-    "isoDatetime": "2026-05-22T23:20:00"
-  },
-  {
-    "id": "39",
-    "band": "Dr. Mark Benecke (D)",
-    "date": "22.05.2026",
-    "time": "14.00 Uhr",
-    "location": "agra Hall 4.2",
-    "isoDatetime": "2026-05-22T14:00:00"
-  },
-  {
-    "id": "40",
-    "band": "The Moderna (D)",
-    "date": "22.05.2026",
-    "time": "21.00 Uhr",
+    "time": "21.00 Uhr",
     "location": "Peterskirche",
     "isoDatetime": "2026-05-22T21:00:00"
   },
   {
+    "id": "27",
+    "band": "Necrø (P)",
+    "date": "22.05.2026",
+    "time": "16.30 Uhr",
+    "location": "Stadtbad",
+    "isoDatetime": "2026-05-22T16:30:00"
+  },
+  {
+    "id": "28",
+    "band": "Tyske Ludder (D)",
+    "date": "22.05.2026",
+    "time": "17.50 Uhr",
+    "location": "Stadtbad",
+    "isoDatetime": "2026-05-22T17:50:00"
+  },
+  {
+    "id": "29",
+    "band": "Biomekkanik (S)",
+    "date": "22.05.2026",
+    "time": "19.10 Uhr",
+    "location": "Stadtbad",
+    "isoDatetime": "2026-05-22T19:10:00"
+  },
+  {
+    "id": "30",
+    "band": "Horskh (F)",
+    "date": "22.05.2026",
+    "time": "20.40 Uhr",
+    "location": "Stadtbad",
+    "isoDatetime": "2026-05-22T20:40:00"
+  },
+  {
+    "id": "31",
+    "band": "Rotersand (D)",
+    "date": "22.05.2026",
+    "time": "22.10 Uhr",
+    "location": "Stadtbad",
+    "isoDatetime": "2026-05-22T22:10:00"
+  },
+  {
+    "id": "32",
+    "band": "Voyna (D)",
+    "date": "22.05.2026",
+    "time": "17.30 Uhr",
+    "location": "Täubchenthal",
+    "isoDatetime": "2026-05-22T17:30:00"
+  },
+  {
+    "id": "33",
+    "band": "Vlad In Tears (I)",
+    "date": "22.05.2026",
+    "time": "18.40 Uhr",
+    "location": "Täubchenthal",
+    "isoDatetime": "2026-05-22T18:40:00"
+  },
+  {
+    "id": "34",
+    "band": "Octavian Winters (US)",
+    "date": "22.05.2026",
+    "time": "20.00 Uhr",
+    "location": "Täubchenthal",
+    "isoDatetime": "2026-05-22T20:00:00"
+  },
+  {
+    "id": "35",
+    "band": "Rosegarden Funeral Party (USA)",
+    "date": "22.05.2026",
+    "time": "21.20 Uhr",
+    "location": "Täubchenthal",
+    "isoDatetime": "2026-05-22T21:20:00"
+  },
+  {
+    "id": "36",
+    "band": "Skeletal Family (UK)",
+    "date": "22.05.2026",
+    "time": "22.40 Uhr",
+    "location": "Täubchenthal",
+    "isoDatetime": "2026-05-22T22:40:00"
+  },
+  {
+    "id": "37",
+    "band": "Zugzwang (I)",
+    "date": "22.05.2026",
+    "time": "19.15 Uhr",
+    "location": "Volkspalast Kantine",
+    "isoDatetime": "2026-05-22T19:15:00"
+  },
+  {
+    "id": "38",
+    "band": "Vrimuot (D)",
+    "date": "22.05.2026",
+    "time": "21.45 Uhr",
+    "location": "Volkspalast Kantine",
+    "isoDatetime": "2026-05-22T21:45:00"
+  },
+  {
+    "id": "39",
+    "band": "Arcana (S)",
+    "date": "22.05.2026",
+    "time": "18.00 Uhr",
+    "location": "Volkspalast Kuppelhalle",
+    "isoDatetime": "2026-05-22T18:00:00"
+  },
+  {
+    "id": "40",
+    "band": "Triarii (D)",
+    "date": "22.05.2026",
+    "time": "20.30 Uhr",
+    "location": "Volkspalast Kuppelhalle",
+    "isoDatetime": "2026-05-22T20:30:00"
+  },
+  {
     "id": "41",
-    "band": "Noelia Sarris Gothic Piano (ARG)",
-    "date": "22.05.2026",
-    "time": "22.30 Uhr",
-    "location": "Parkschloß - Barocksaal",
-    "isoDatetime": "2026-05-22T22:30:00"
-  },
-  {
-    "id": "42",
-    "band": "Ensemble Lina (D)",
-    "date": "22.05.2026",
-    "time": "23.30 Uhr",
-    "location": "Parkschloß - Barocksaal",
-    "isoDatetime": "2026-05-22T23:30:00"
-  },
-  {
-    "id": "43",
-    "band": "Thoolas Tribe (D)",
-    "date": "22.05.2026",
-    "time": "23.30 Uhr",
-    "location": "Parkschloß - Barocksaal",
-    "isoDatetime": "2026-05-22T23:30:00"
-  },
-  {
-    "id": "44",
     "band": "Rosa Crux (F)",
     "date": "22.05.2026",
-    "time": "23.00 Uhr",
+    "time": "23.00 Uhr",
     "location": "Volkspalast Kuppelhalle",
     "isoDatetime": "2026-05-22T23:00:00"
   },
   {
+    "id": "42",
+    "band": "Noelia Sarris Gothic Piano (ARG)",
+    "date": "22.05.2026",
+    "time": "22.30 Uhr",
+    "location": "Parkschloss - Barocksaal",
+    "isoDatetime": "2026-05-22T22:30:00"
+  },
+  {
+    "id": "43",
+    "band": "Ensemble Lina (D)",
+    "date": "22.05.2026",
+    "time": "23.30 Uhr",
+    "location": "Parkschloss - Barocksaal",
+    "isoDatetime": "2026-05-22T23:30:00"
+  },
+  {
+    "id": "44",
+    "band": "Thoolas Tribe (D)",
+    "date": "22.05.2026",
+    "time": "23.45 Uhr",
+    "location": "Parkschloss - Barocksaal",
+    "isoDatetime": "2026-05-22T23:45:00"
+  },
+  {
     "id": "45",
+    "band": "Patenbrigade:Wolff (D)",
+    "date": "23.05.2026",
+    "time": "16.00 Uhr",
+    "location": "agra-Gelände",
+    "isoDatetime": "2026-05-23T16:00:00"
+  },
+  {
+    "id": "46",
+    "band": "Nachtmahr (A)",
+    "date": "23.05.2026",
+    "time": "17.15 Uhr",
+    "location": "agra-Gelände",
+    "isoDatetime": "2026-05-23T17:15:00"
+  },
+  {
+    "id": "47",
+    "band": "Cat Rapes Dog (S)",
+    "date": "23.05.2026",
+    "time": "18.45 Uhr",
+    "location": "agra-Gelände",
+    "isoDatetime": "2026-05-23T18:45:00"
+  },
+  {
+    "id": "48",
+    "band": "Suicide Commando (B)",
+    "date": "23.05.2026",
+    "time": "20.10 Uhr",
+    "location": "agra-Gelände",
+    "isoDatetime": "2026-05-23T20:10:00"
+  },
+  {
+    "id": "49",
+    "band": "Frontline Assembly (CDN)",
+    "date": "23.05.2026",
+    "time": "21.50 Uhr",
+    "location": "agra-Gelände",
+    "isoDatetime": "2026-05-23T21:50:00"
+  },
+  {
+    "id": "50",
+    "band": "Covenant (S)",
+    "date": "23.05.2026",
+    "time": "23.30 Uhr",
+    "location": "agra-Gelände",
+    "isoDatetime": "2026-05-23T23:30:00"
+  },
+  {
+    "id": "51",
+    "band": "Perturbator (F)",
+    "date": "23.05.2026",
+    "time": "01.15 Uhr",
+    "location": "agra-Gelände",
+    "isoDatetime": "2026-05-23T01:15:00"
+  },
+  {
+    "id": "52",
     "band": "The Palace Of Tears (USA)",
     "date": "23.05.2026",
-    "time": "16.30 Uhr",
+    "time": "16.30 Uhr",
     "location": "Felsenkeller",
     "isoDatetime": "2026-05-23T16:30:00"
   },
   {
-    "id": "46",
+    "id": "53",
     "band": "Myrna Loy (D)",
     "date": "23.05.2026",
-    "time": "17.50 Uhr",
+    "time": "17.50 Uhr",
     "location": "Felsenkeller",
     "isoDatetime": "2026-05-23T17:50:00"
   },
   {
-    "id": "47",
+    "id": "54",
     "band": "SOKO+++Friedhof (D)",
     "date": "23.05.2026",
-    "time": "19.10 Uhr",
+    "time": "19.10 Uhr",
     "location": "Felsenkeller",
     "isoDatetime": "2026-05-23T19:10:00"
   },
   {
-    "id": "48",
+    "id": "55",
     "band": "Grausame Töchter (D)",
     "date": "23.05.2026",
-    "time": "20.40 Uhr",
+    "time": "20.40 Uhr",
     "location": "Felsenkeller",
     "isoDatetime": "2026-05-23T20:40:00"
   },
   {
-    "id": "49",
+    "id": "56",
     "band": "Alles Schwarz feat. Oswald Henke (D)",
     "date": "23.05.2026",
-    "time": "22.20 Uhr",
+    "time": "22.20 Uhr",
     "location": "Felsenkeller",
     "isoDatetime": "2026-05-23T22:20:00"
   },
   {
-    "id": "50",
+    "id": "57",
     "band": "Karl Kave (CH)",
     "date": "23.05.2026",
-    "time": "17.00 Uhr",
+    "time": "17.00 Uhr",
     "location": "Haus Leipzig",
-    "isoDatetime": "2026-05-23T17:00:00"
-  },
-  {
-    "id": "51",
-    "band": "Cosey Mueller (D)",
-    "date": "23.05.2026",
-    "time": "18.20 Uhr",
-    "location": "Haus Leipzig",
-    "isoDatetime": "2026-05-23T18:20:00"
-  },
-  {
-    "id": "52",
-    "band": "Ssleeping Desiress (USA)",
-    "date": "23.05.2026",
-    "time": "19.40 Uhr",
-    "location": "Haus Leipzig",
-    "isoDatetime": "2026-05-23T19:40:00"
-  },
-  {
-    "id": "53",
-    "band": "Bal Pare (D)",
-    "date": "23.05.2026",
-    "time": "21.00 Uhr",
-    "location": "Haus Leipzig",
-    "isoDatetime": "2026-05-23T21:00:00"
-  },
-  {
-    "id": "54",
-    "band": "Male Tears (USA)",
-    "date": "23.05.2026",
-    "time": "22.40 Uhr",
-    "location": "Haus Leipzig",
-    "isoDatetime": "2026-05-23T22:40:00"
-  },
-  {
-    "id": "55",
-    "band": "The Rumpled (I)",
-    "date": "23.05.2026",
-    "time": "14.00 Uhr",
-    "location": "Heidnisches Dorf / Torhaus Dölitz",
-    "isoDatetime": "2026-05-23T14:00:00"
-  },
-  {
-    "id": "56",
-    "band": "Waldkauz (D)",
-    "date": "23.05.2026",
-    "time": "15.30 Uhr",
-    "location": "Heidnisches Dorf / Torhaus Dölitz",
-    "isoDatetime": "2026-05-23T15:30:00"
-  },
-  {
-    "id": "57",
-    "band": "Katerfahrt (D)",
-    "date": "23.05.2026",
-    "time": "17.00 Uhr",
-    "location": "Heidnisches Dorf / Torhaus Dölitz",
     "isoDatetime": "2026-05-23T17:00:00"
   },
   {
     "id": "58",
+    "band": "Cosey Mueller (D)",
+    "date": "23.05.2026",
+    "time": "18.20 Uhr",
+    "location": "Haus Leipzig",
+    "isoDatetime": "2026-05-23T18:20:00"
+  },
+  {
+    "id": "59",
+    "band": "Ssleeping Desiress (USA)",
+    "date": "23.05.2026",
+    "time": "19.40 Uhr",
+    "location": "Haus Leipzig",
+    "isoDatetime": "2026-05-23T19:40:00"
+  },
+  {
+    "id": "60",
+    "band": "Bal Pare (D)",
+    "date": "23.05.2026",
+    "time": "21.00 Uhr",
+    "location": "Haus Leipzig",
+    "isoDatetime": "2026-05-23T21:00:00"
+  },
+  {
+    "id": "61",
+    "band": "Male Tears (USA)",
+    "date": "23.05.2026",
+    "time": "22.40 Uhr",
+    "location": "Haus Leipzig",
+    "isoDatetime": "2026-05-23T22:40:00"
+  },
+  {
+    "id": "62",
+    "band": "The Rumpled (I)",
+    "date": "23.05.2026",
+    "time": "14.00 Uhr",
+    "location": "Heidnisches Dorf / Torhaus Dölitz",
+    "isoDatetime": "2026-05-23T14:00:00"
+  },
+  {
+    "id": "63",
+    "band": "Waldkauz (D)",
+    "date": "23.05.2026",
+    "time": "15.30 Uhr",
+    "location": "Heidnisches Dorf / Torhaus Dölitz",
+    "isoDatetime": "2026-05-23T15:30:00"
+  },
+  {
+    "id": "64",
+    "band": "Katerfahrt (D)",
+    "date": "23.05.2026",
+    "time": "17.00 Uhr",
+    "location": "Heidnisches Dorf / Torhaus Dölitz",
+    "isoDatetime": "2026-05-23T17:00:00"
+  },
+  {
+    "id": "65",
     "band": "Schöngeist (D)",
     "date": "23.05.2026",
-    "time": "18.30 Uhr",
+    "time": "18.30 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
     "isoDatetime": "2026-05-23T18:30:00"
   },
   {
-    "id": "59",
+    "id": "66",
     "band": "Cultus Ferox (D)",
     "date": "23.05.2026",
-    "time": "20.05 Uhr",
+    "time": "20.05 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
     "isoDatetime": "2026-05-23T20:05:00"
   },
   {
-    "id": "60",
+    "id": "67",
     "band": "Tabernis (D)",
     "date": "23.05.2026",
-    "time": "21.45 Uhr",
+    "time": "21.45 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
     "isoDatetime": "2026-05-23T21:45:00"
   },
   {
-    "id": "61",
+    "id": "68",
+    "band": "Feuerspektakel",
+    "date": "23.05.2026",
+    "time": "23.30 Uhr",
+    "location": "Heidnisches Dorf / Torhaus Dölitz",
+    "isoDatetime": "2026-05-23T23:30:00"
+  },
+  {
+    "id": "69",
     "band": "Hateful Chains (FIN)",
     "date": "23.05.2026",
-    "time": "20.00 Uhr",
+    "time": "20.00 Uhr",
     "location": "Moritzbastei",
     "isoDatetime": "2026-05-23T20:00:00"
   },
   {
-    "id": "62",
+    "id": "70",
     "band": "Krieg-B (F/B)",
     "date": "23.05.2026",
-    "time": "21.00 Uhr",
+    "time": "21.00 Uhr",
     "location": "Moritzbastei",
     "isoDatetime": "2026-05-23T21:00:00"
   },
   {
-    "id": "63",
+    "id": "71",
     "band": "Adam Usi (D)",
     "date": "23.05.2026",
-    "time": "22.00 Uhr",
+    "time": "22.00 Uhr",
     "location": "Moritzbastei",
     "isoDatetime": "2026-05-23T22:00:00"
   },
   {
-    "id": "64",
+    "id": "72",
     "band": "Nuovo Testamento (USA)",
     "date": "23.05.2026",
-    "time": "23.10 Uhr",
+    "time": "23.10 Uhr",
     "location": "Moritzbastei",
     "isoDatetime": "2026-05-23T23:10:00"
   },
   {
-    "id": "65",
-    "band": "Lux Interna (USA)",
+    "id": "73",
+    "band": "Starlights Live - Die Große Kirchenorgel-Show (D)",
     "date": "23.05.2026",
-    "time": "18.45 Uhr",
-    "location": "Parkschloß - Ballsaal",
-    "isoDatetime": "2026-05-23T18:45:00"
+    "time": "16.00 Uhr",
+    "location": "Peterskirche",
+    "isoDatetime": "2026-05-23T16:00:00"
   },
   {
-    "id": "66",
-    "band": "The Revolutionary Army Of The Infant Jesus (UK)",
-    "date": "23.05.2026",
-    "time": "21.15 Uhr",
-    "location": "Parkschloß - Ballsaal",
-    "isoDatetime": "2026-05-23T21:15:00"
-  },
-  {
-    "id": "67",
-    "band": "Evi Vine (UK)",
-    "date": "23.05.2026",
-    "time": "17.30 Uhr",
-    "location": "Parkschloß - Barocksaal",
-    "isoDatetime": "2026-05-23T17:30:00"
-  },
-  {
-    "id": "68",
-    "band": "Ataraxia (I)",
-    "date": "23.05.2026",
-    "time": "20.00 Uhr",
-    "location": "Parkschloß - Barocksaal",
-    "isoDatetime": "2026-05-23T20:00:00"
-  },
-  {
-    "id": "69",
-    "band": "Rome (LUX)",
-    "date": "23.05.2026",
-    "time": "22.30 Uhr",
-    "location": "Parkschloß - Barocksaal",
-    "isoDatetime": "2026-05-23T22:30:00"
-  },
-  {
-    "id": "70",
+    "id": "74",
     "band": "Oh Hiroshima (S)",
     "date": "23.05.2026",
-    "time": "17.00 Uhr",
+    "time": "17.00 Uhr",
     "location": "Stadtbad",
     "isoDatetime": "2026-05-23T17:00:00"
   },
   {
-    "id": "71",
+    "id": "75",
     "band": "Green Hill (D)",
     "date": "23.05.2026",
-    "time": "18.30 Uhr",
+    "time": "18.30 Uhr",
     "location": "Stadtbad",
     "isoDatetime": "2026-05-23T18:30:00"
   },
   {
-    "id": "72",
+    "id": "76",
     "band": "Kauan (FIN)",
     "date": "23.05.2026",
-    "time": "19.50 Uhr",
+    "time": "19.50 Uhr",
     "location": "Stadtbad",
     "isoDatetime": "2026-05-23T19:50:00"
   },
   {
-    "id": "73",
+    "id": "77",
     "band": "A.A.Williams (UK)",
     "date": "23.05.2026",
-    "time": "21.20 Uhr",
+    "time": "21.20 Uhr",
     "location": "Stadtbad",
     "isoDatetime": "2026-05-23T21:20:00"
   },
   {
-    "id": "74",
+    "id": "78",
     "band": "Talk To Her (I)",
     "date": "23.05.2026",
-    "time": "22.40 Uhr",
+    "time": "22.40 Uhr",
     "location": "Stadtbad",
     "isoDatetime": "2026-05-23T22:40:00"
   },
   {
-    "id": "75",
-    "band": "Theaterpack (D)",
-    "date": "23.05.2026",
-    "time": "13.00 Uhr",
-    "location": "Täubchenthal",
-    "isoDatetime": "2026-05-23T13:00:00"
-  },
-  {
-    "id": "76",
+    "id": "79",
     "band": "Astari Nite (USA)",
     "date": "23.05.2026",
-    "time": "16.30 Uhr",
+    "time": "16.30 Uhr",
     "location": "Täubchenthal",
     "isoDatetime": "2026-05-23T16:30:00"
   },
   {
-    "id": "77",
+    "id": "80",
     "band": "Nox Novacula (USA)",
     "date": "23.05.2026",
-    "time": "17.50 Uhr",
+    "time": "17.50 Uhr",
     "location": "Täubchenthal",
     "isoDatetime": "2026-05-23T17:50:00"
   },
   {
-    "id": "78",
+    "id": "81",
     "band": "Altar De Fey (US)",
     "date": "23.05.2026",
-    "time": "19.10 Uhr",
+    "time": "19.10 Uhr",
     "location": "Täubchenthal",
     "isoDatetime": "2026-05-23T19:10:00"
   },
   {
-    "id": "79",
+    "id": "82",
     "band": "Frustration (F)",
     "date": "23.05.2026",
-    "time": "20.40 Uhr",
+    "time": "20.40 Uhr",
     "location": "Täubchenthal",
     "isoDatetime": "2026-05-23T20:40:00"
   },
   {
-    "id": "80",
+    "id": "83",
     "band": "UK Decay (UK)",
     "date": "23.05.2026",
-    "time": "22.20 Uhr",
+    "time": "22.20 Uhr",
     "location": "Täubchenthal",
     "isoDatetime": "2026-05-23T22:20:00"
   },
   {
-    "id": "81",
-    "band": "Perturbator (F)",
-    "date": "23.05.2026",
-    "time": "01.15 Uhr",
-    "location": "agra",
-    "isoDatetime": "2026-05-23T01:15:00"
-  },
-  {
-    "id": "82",
-    "band": "Patenbrigade:Wolff (D)",
-    "date": "23.05.2026",
-    "time": "16.00 Uhr",
-    "location": "agra",
-    "isoDatetime": "2026-05-23T16:00:00"
-  },
-  {
-    "id": "83",
-    "band": "Nachtmahr (A)",
-    "date": "23.05.2026",
-    "time": "17.15 Uhr",
-    "location": "agra",
-    "isoDatetime": "2026-05-23T17:15:00"
-  },
-  {
     "id": "84",
-    "band": "Cat Rapes Dog (S)",
+    "band": "Rosa Crux (F)",
     "date": "23.05.2026",
-    "time": "18.45 Uhr",
-    "location": "agra",
-    "isoDatetime": "2026-05-23T18:45:00"
+    "time": "21.00 Uhr",
+    "location": "Volkspalast Kuppelhalle",
+    "isoDatetime": "2026-05-23T21:00:00"
   },
   {
     "id": "85",
-    "band": "Suicide Commando (B)",
+    "band": "Evi Vine (UK)",
     "date": "23.05.2026",
-    "time": "20.10 Uhr",
-    "location": "agra",
-    "isoDatetime": "2026-05-23T20:10:00"
+    "time": "17.30 Uhr",
+    "location": "Parkschloss - Barocksaal",
+    "isoDatetime": "2026-05-23T17:30:00"
   },
   {
     "id": "86",
-    "band": "Frontline Assembly (CDN)",
+    "band": "Ataraxia (I)",
     "date": "23.05.2026",
-    "time": "21.50 Uhr",
-    "location": "agra",
-    "isoDatetime": "2026-05-23T21:50:00"
+    "time": "20.00 Uhr",
+    "location": "Parkschloss - Barocksaal",
+    "isoDatetime": "2026-05-23T20:00:00"
   },
   {
     "id": "87",
-    "band": "Covenant (S)",
+    "band": "Rome (LUX)",
     "date": "23.05.2026",
-    "time": "23.30 Uhr",
-    "location": "agra",
-    "isoDatetime": "2026-05-23T23:30:00"
+    "time": "22.30 Uhr",
+    "location": "Parkschloss - Barocksaal",
+    "isoDatetime": "2026-05-23T22:30:00"
   },
   {
     "id": "88",
-    "band": "Starlights Live - Die große Kirchenorgel-Show (D)",
+    "band": "Lux Interna (USA)",
     "date": "23.05.2026",
-    "time": "16.00 Uhr",
-    "location": "Peterskirche",
-    "isoDatetime": "2026-05-23T16:00:00"
+    "time": "18.45 Uhr",
+    "location": "Parkschloss - Ballsaal",
+    "isoDatetime": "2026-05-23T18:45:00"
   },
   {
     "id": "89",
+    "band": "The Revolutionary Army Of The Infant Jesus (UK)",
+    "date": "23.05.2026",
+    "time": "21.15 Uhr",
+    "location": "Parkschloss - Ballsaal",
+    "isoDatetime": "2026-05-23T21:15:00"
+  },
+  {
+    "id": "90",
+    "band": "Auger (UK)",
+    "date": "24.05.2026",
+    "time": "16.00 Uhr",
+    "location": "agra-Gelände",
+    "isoDatetime": "2026-05-24T16:00:00"
+  },
+  {
+    "id": "91",
+    "band": "Corpus Delicti (F)",
+    "date": "24.05.2026",
+    "time": "17.15 Uhr",
+    "location": "agra-Gelände",
+    "isoDatetime": "2026-05-24T17:15:00"
+  },
+  {
+    "id": "92",
+    "band": "Clan Of Xymox (NL)",
+    "date": "24.05.2026",
+    "time": "18.45 Uhr",
+    "location": "agra-Gelände",
+    "isoDatetime": "2026-05-24T18:45:00"
+  },
+  {
+    "id": "93",
+    "band": "She Past Away (TR)",
+    "date": "24.05.2026",
+    "time": "20.10 Uhr",
+    "location": "agra-Gelände",
+    "isoDatetime": "2026-05-24T20:10:00"
+  },
+  {
+    "id": "94",
+    "band": "London After Midnight (US)",
+    "date": "24.05.2026",
+    "time": "21.50 Uhr",
+    "location": "agra-Gelände",
+    "isoDatetime": "2026-05-24T21:50:00"
+  },
+  {
+    "id": "95",
+    "band": "Lacrimosa (CH)",
+    "date": "24.05.2026",
+    "time": "23.30 Uhr",
+    "location": "agra-Gelände",
+    "isoDatetime": "2026-05-24T23:30:00"
+  },
+  {
+    "id": "96",
     "band": "Blaklight (USA)",
     "date": "24.05.2026",
-    "time": "16.30 Uhr",
+    "time": "16.30 Uhr",
     "location": "Felsenkeller",
     "isoDatetime": "2026-05-24T16:30:00"
   },
   {
-    "id": "90",
+    "id": "97",
     "band": "Gulvøss (D)",
     "date": "24.05.2026",
-    "time": "17.50 Uhr",
+    "time": "17.50 Uhr",
     "location": "Felsenkeller",
     "isoDatetime": "2026-05-24T17:50:00"
   },
   {
-    "id": "91",
+    "id": "98",
     "band": "Empathy Test (UK)",
     "date": "24.05.2026",
-    "time": "19.10 Uhr",
+    "time": "19.10 Uhr",
     "location": "Felsenkeller",
     "isoDatetime": "2026-05-24T19:10:00"
   },
   {
-    "id": "92",
+    "id": "99",
     "band": "Diorama (D)",
     "date": "24.05.2026",
-    "time": "20.40 Uhr",
+    "time": "20.40 Uhr",
     "location": "Felsenkeller",
     "isoDatetime": "2026-05-24T20:40:00"
   },
   {
-    "id": "93",
+    "id": "100",
     "band": "Solitary Experiments (D)",
     "date": "24.05.2026",
-    "time": "22.20 Uhr",
+    "time": "22.20 Uhr",
     "location": "Felsenkeller",
     "isoDatetime": "2026-05-24T22:20:00"
   },
   {
-    "id": "94",
+    "id": "101",
     "band": "NordarR (D)",
     "date": "24.05.2026",
-    "time": "17.00 Uhr",
+    "time": "17.00 Uhr",
     "location": "Haus Leipzig",
     "isoDatetime": "2026-05-24T17:00:00"
   },
   {
-    "id": "95",
+    "id": "102",
     "band": "Autodafeh (S)",
     "date": "24.05.2026",
-    "time": "18.20 Uhr",
+    "time": "18.20 Uhr",
     "location": "Haus Leipzig",
     "isoDatetime": "2026-05-24T18:20:00"
   },
   {
-    "id": "96",
+    "id": "103",
+    "band": "Haujobb (D)",
+    "date": "24.05.2026",
+    "time": "19.40 Uhr",
+    "location": "Haus Leipzig",
+    "isoDatetime": "2026-05-24T19:40:00"
+  },
+  {
+    "id": "104",
     "band": "Armageddon Dildos (D)",
     "date": "24.05.2026",
-    "time": "21.00 Uhr",
+    "time": "21.00 Uhr",
     "location": "Haus Leipzig",
     "isoDatetime": "2026-05-24T21:00:00"
   },
   {
-    "id": "97",
+    "id": "105",
     "band": "Portion Control (UK)",
     "date": "24.05.2026",
-    "time": "22.30 Uhr",
+    "time": "22.30 Uhr",
     "location": "Haus Leipzig",
     "isoDatetime": "2026-05-24T22:30:00"
   },
   {
-    "id": "98",
+    "id": "106",
     "band": "Tibetrea (D)",
     "date": "24.05.2026",
-    "time": "14.00 Uhr",
+    "time": "14.00 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
     "isoDatetime": "2026-05-24T14:00:00"
   },
   {
-    "id": "99",
+    "id": "107",
     "band": "Vermilia (FIN)",
     "date": "24.05.2026",
-    "time": "15.50 Uhr",
+    "time": "15.50 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
     "isoDatetime": "2026-05-24T15:50:00"
   },
   {
-    "id": "100",
+    "id": "108",
     "band": "Sagenbringer (D)",
     "date": "24.05.2026",
-    "time": "17.30 Uhr",
+    "time": "17.30 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
     "isoDatetime": "2026-05-24T17:30:00"
   },
   {
-    "id": "101",
+    "id": "109",
     "band": "Heidevolk (NL)",
     "date": "24.05.2026",
-    "time": "19.20 Uhr",
+    "time": "19.20 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
     "isoDatetime": "2026-05-24T19:20:00"
   },
   {
-    "id": "102",
+    "id": "110",
     "band": "Hindarfjäll (S)",
     "date": "24.05.2026",
-    "time": "21.20 Uhr",
+    "time": "21.20 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
     "isoDatetime": "2026-05-24T21:20:00"
   },
   {
-    "id": "103",
-    "band": "Hexperos (I)",
+    "id": "111",
+    "band": "Feuerspektakel",
     "date": "24.05.2026",
-    "time": "14.00 Uhr",
-    "location": "Kirchenruine Wachau",
-    "isoDatetime": "2026-05-24T14:00:00"
+    "time": "23.30 Uhr",
+    "location": "Heidnisches Dorf / Torhaus Dölitz",
+    "isoDatetime": "2026-05-24T23:30:00"
   },
   {
-    "id": "104",
+    "id": "112",
     "band": "André Alabaster & The Curved Beaks (D)",
     "date": "24.05.2026",
-    "time": "19.45 Uhr",
+    "time": "19.45 Uhr",
     "location": "Moritzbastei",
     "isoDatetime": "2026-05-24T19:45:00"
   },
   {
-    "id": "105",
+    "id": "113",
     "band": "Hinfort (D)",
     "date": "24.05.2026",
-    "time": "20.45 Uhr",
+    "time": "20.45 Uhr",
     "location": "Moritzbastei",
     "isoDatetime": "2026-05-24T20:45:00"
   },
   {
-    "id": "106",
+    "id": "114",
     "band": "Shadows Hold (USA)",
     "date": "24.05.2026",
-    "time": "21.45 Uhr",
+    "time": "21.45 Uhr",
     "location": "Moritzbastei",
     "isoDatetime": "2026-05-24T21:45:00"
   },
   {
-    "id": "107",
+    "id": "115",
     "band": "Pahl! (D)",
     "date": "24.05.2026",
-    "time": "22.55 Uhr",
+    "time": "22.55 Uhr",
     "location": "Moritzbastei",
     "isoDatetime": "2026-05-24T22:55:00"
   },
   {
-    "id": "108",
-    "band": "Den Der Hale (S)",
-    "date": "24.05.2026",
-    "time": "18.45 Uhr",
-    "location": "Parkschloß - Ballsaal",
-    "isoDatetime": "2026-05-24T18:45:00"
-  },
-  {
-    "id": "109",
-    "band": "Electric Litany (UK)",
-    "date": "24.05.2026",
-    "time": "21.15 Uhr",
-    "location": "Parkschloß - Ballsaal",
-    "isoDatetime": "2026-05-24T21:15:00"
-  },
-  {
-    "id": "110",
-    "band": "The Underground Youth (UK)",
-    "date": "24.05.2026",
-    "time": "17.30 Uhr",
-    "location": "Parkschloß - Barocksaal",
-    "isoDatetime": "2026-05-24T17:30:00"
-  },
-  {
-    "id": "111",
-    "band": "The Devil & The Universe (A)",
-    "date": "24.05.2026",
-    "time": "20.00 Uhr",
-    "location": "Parkschloß - Barocksaal",
-    "isoDatetime": "2026-05-24T20:00:00"
-  },
-  {
-    "id": "112",
-    "band": "Klimt 1918 (I)",
-    "date": "24.05.2026",
-    "time": "22.30 Uhr",
-    "location": "Parkschloß - Barocksaal",
-    "isoDatetime": "2026-05-24T22:30:00"
-  },
-  {
-    "id": "113",
+    "id": "116",
     "band": "Vaughn George (UK)",
     "date": "24.05.2026",
-    "time": "16.00 Uhr",
+    "time": "16.00 Uhr",
     "location": "Peterskirche",
     "isoDatetime": "2026-05-24T16:00:00"
   },
   {
-    "id": "114",
+    "id": "117",
     "band": "Sven Friedrich & Dirk Riegner (D)",
     "date": "24.05.2026",
-    "time": "19.00 Uhr",
+    "time": "19.00 Uhr",
     "location": "Peterskirche",
     "isoDatetime": "2026-05-24T19:00:00"
   },
   {
-    "id": "115",
+    "id": "118",
     "band": "Bestial Mouths (US)",
     "date": "24.05.2026",
-    "time": "17.00 Uhr",
+    "time": "17.00 Uhr",
     "location": "Stadtbad",
     "isoDatetime": "2026-05-24T17:00:00"
   },
   {
-    "id": "116",
+    "id": "119",
     "band": "Soft Vein (US)",
     "date": "24.05.2026",
-    "time": "18.20 Uhr",
+    "time": "18.20 Uhr",
     "location": "Stadtbad",
     "isoDatetime": "2026-05-24T18:20:00"
   },
   {
-    "id": "117",
+    "id": "120",
     "band": "Noromakina (CO)",
     "date": "24.05.2026",
-    "time": "19.40 Uhr",
+    "time": "19.40 Uhr",
     "location": "Stadtbad",
     "isoDatetime": "2026-05-24T19:40:00"
   },
   {
-    "id": "118",
+    "id": "121",
     "band": "Qual (UK)",
     "date": "24.05.2026",
-    "time": "21.10 Uhr",
+    "time": "21.10 Uhr",
     "location": "Stadtbad",
     "isoDatetime": "2026-05-24T21:10:00"
   },
   {
-    "id": "119",
+    "id": "122",
     "band": "Zanias (AUS/D)",
     "date": "24.05.2026",
-    "time": "22.40 Uhr",
+    "time": "22.40 Uhr",
     "location": "Stadtbad",
     "isoDatetime": "2026-05-24T22:40:00"
   },
   {
-    "id": "120",
+    "id": "123",
     "band": "MS Gentur + Sven Phalanx (D)",
     "date": "24.05.2026",
-    "time": "16.30 Uhr",
+    "time": "16.30 Uhr",
     "location": "Täubchenthal",
     "isoDatetime": "2026-05-24T16:30:00"
   },
   {
-    "id": "121",
+    "id": "124",
     "band": "Ambassador21 (BY)",
     "date": "24.05.2026",
-    "time": "17.50 Uhr",
+    "time": "17.50 Uhr",
     "location": "Täubchenthal",
     "isoDatetime": "2026-05-24T17:50:00"
   },
   {
-    "id": "122",
+    "id": "125",
     "band": "Soman (D)",
     "date": "24.05.2026",
-    "time": "19.10 Uhr",
+    "time": "19.10 Uhr",
     "location": "Täubchenthal",
     "isoDatetime": "2026-05-24T19:10:00"
   },
   {
-    "id": "123",
+    "id": "126",
     "band": "Kiew (D)",
     "date": "24.05.2026",
-    "time": "20.40 Uhr",
+    "time": "20.40 Uhr",
     "location": "Täubchenthal",
     "isoDatetime": "2026-05-24T20:40:00"
   },
   {
-    "id": "124",
+    "id": "127",
     "band": "Ah Cama-Sotz (B)",
     "date": "24.05.2026",
-    "time": "22.20 Uhr",
+    "time": "22.20 Uhr",
     "location": "Täubchenthal",
     "isoDatetime": "2026-05-24T22:20:00"
   },
   {
-    "id": "125",
+    "id": "128",
     "band": "Euroshima (RA)",
     "date": "24.05.2026",
-    "time": "16.35 Uhr",
+    "time": "16.35 Uhr",
     "location": "Volkspalast Kantine",
     "isoDatetime": "2026-05-24T16:35:00"
   },
   {
-    "id": "126",
+    "id": "129",
     "band": "Eddie Dark (GR)",
     "date": "24.05.2026",
-    "time": "18.45 Uhr",
+    "time": "18.45 Uhr",
     "location": "Volkspalast Kantine",
     "isoDatetime": "2026-05-24T18:45:00"
   },
   {
-    "id": "127",
+    "id": "130",
     "band": "Digital Drvgs (USA)",
     "date": "24.05.2026",
-    "time": "21.15 Uhr",
+    "time": "21.15 Uhr",
     "location": "Volkspalast Kantine",
     "isoDatetime": "2026-05-24T21:15:00"
   },
   {
-    "id": "128",
+    "id": "131",
     "band": "Casket Cassette (USA)",
     "date": "24.05.2026",
-    "time": "15.30 Uhr",
+    "time": "15.30 Uhr",
     "location": "Volkspalast Kuppelhalle",
     "isoDatetime": "2026-05-24T15:30:00"
   },
   {
-    "id": "129",
+    "id": "132",
     "band": "My Manifesto (USA)",
     "date": "24.05.2026",
-    "time": "17.40 Uhr",
+    "time": "17.40 Uhr",
     "location": "Volkspalast Kuppelhalle",
     "isoDatetime": "2026-05-24T17:40:00"
   },
   {
-    "id": "130",
+    "id": "133",
     "band": "Creux Lies (US)",
     "date": "24.05.2026",
-    "time": "19.50 Uhr",
+    "time": "19.50 Uhr",
     "location": "Volkspalast Kuppelhalle",
     "isoDatetime": "2026-05-24T19:50:00"
   },
   {
-    "id": "131",
+    "id": "134",
     "band": "Mica Eternal (USA)",
     "date": "24.05.2026",
-    "time": "22.30 Uhr",
+    "time": "22.30 Uhr",
     "location": "Volkspalast Kuppelhalle",
     "isoDatetime": "2026-05-24T22:30:00"
   },
   {
-    "id": "132",
-    "band": "Auger (UK)",
-    "date": "24.05.2026",
-    "time": "16.00 Uhr",
-    "location": "agra",
-    "isoDatetime": "2026-05-24T16:00:00"
-  },
-  {
-    "id": "133",
-    "band": "Corpus Delicti (F)",
-    "date": "24.05.2026",
-    "time": "17.15 Uhr",
-    "location": "agra",
-    "isoDatetime": "2026-05-24T17:15:00"
-  },
-  {
-    "id": "134",
-    "band": "Clan Of Xymox (NL)",
-    "date": "24.05.2026",
-    "time": "18.45 Uhr",
-    "location": "agra",
-    "isoDatetime": "2026-05-24T18:45:00"
-  },
-  {
     "id": "135",
-    "band": "She Past Away (TR)",
+    "band": "The Underground Youth (UK)",
     "date": "24.05.2026",
-    "time": "20.10 Uhr",
-    "location": "agra",
-    "isoDatetime": "2026-05-24T20:10:00"
+    "time": "17.30 Uhr",
+    "location": "Parkschloss - Barocksaal",
+    "isoDatetime": "2026-05-24T17:30:00"
   },
   {
     "id": "136",
-    "band": "London After Midnight (US)",
+    "band": "The Devil & The Universe (A)",
     "date": "24.05.2026",
-    "time": "21.50 Uhr",
-    "location": "agra",
-    "isoDatetime": "2026-05-24T21:50:00"
+    "time": "20.00 Uhr",
+    "location": "Parkschloss - Barocksaal",
+    "isoDatetime": "2026-05-24T20:00:00"
   },
   {
     "id": "137",
-    "band": "Lacrimosa (CH)",
+    "band": "Klimt 1918 (I)",
     "date": "24.05.2026",
-    "time": "23.30 Uhr",
-    "location": "agra",
-    "isoDatetime": "2026-05-24T23:30:00"
+    "time": "22.30 Uhr",
+    "location": "Parkschloss - Barocksaal",
+    "isoDatetime": "2026-05-24T22:30:00"
   },
   {
     "id": "138",
+    "band": "Den Der Hale (S)",
+    "date": "24.05.2026",
+    "time": "18.45 Uhr",
+    "location": "Parkschloss - Ballsaal",
+    "isoDatetime": "2026-05-24T18:45:00"
+  },
+  {
+    "id": "139",
+    "band": "Electric Litany (UK)",
+    "date": "24.05.2026",
+    "time": "21.15 Uhr",
+    "location": "Parkschloss - Ballsaal",
+    "isoDatetime": "2026-05-24T21:15:00"
+  },
+  {
+    "id": "140",
+    "band": "Panzer AG (N)",
+    "date": "25.05.2026",
+    "time": "17.00 Uhr",
+    "location": "agra-Gelände",
+    "isoDatetime": "2026-05-25T17:00:00"
+  },
+  {
+    "id": "141",
+    "band": "Unzucht (D)",
+    "date": "25.05.2026",
+    "time": "18.30 Uhr",
+    "location": "agra-Gelände",
+    "isoDatetime": "2026-05-25T18:30:00"
+  },
+  {
+    "id": "142",
+    "band": "Aesthetic Perfection (US)",
+    "date": "25.05.2026",
+    "time": "19.55 Uhr",
+    "location": "agra-Gelände",
+    "isoDatetime": "2026-05-25T19:55:00"
+  },
+  {
+    "id": "143",
+    "band": "Moonspell (P)",
+    "date": "25.05.2026",
+    "time": "21.20 Uhr",
+    "location": "agra-Gelände",
+    "isoDatetime": "2026-05-25T21:20:00"
+  },
+  {
+    "id": "144",
+    "band": "Molchat Doma (BY)",
+    "date": "25.05.2026",
+    "time": "22.45 Uhr",
+    "location": "agra-Gelände",
+    "isoDatetime": "2026-05-25T22:45:00"
+  },
+  {
+    "id": "145",
     "band": "Prager Handgriff (D)",
     "date": "25.05.2026",
-    "time": "16.30 Uhr",
+    "time": "16.30 Uhr",
     "location": "Felsenkeller",
     "isoDatetime": "2026-05-25T16:30:00"
   },
   {
-    "id": "139",
+    "id": "146",
     "band": "Rein (S)",
     "date": "25.05.2026",
-    "time": "17.50 Uhr",
+    "time": "17.50 Uhr",
     "location": "Felsenkeller",
     "isoDatetime": "2026-05-25T17:50:00"
   },
   {
-    "id": "140",
+    "id": "147",
     "band": "Pankow (I)",
     "date": "25.05.2026",
-    "time": "19.10 Uhr",
+    "time": "19.10 Uhr",
     "location": "Felsenkeller",
     "isoDatetime": "2026-05-25T19:10:00"
   },
   {
-    "id": "141",
+    "id": "148",
     "band": "Eisfabrik (D)",
     "date": "25.05.2026",
-    "time": "20.40 Uhr",
+    "time": "20.40 Uhr",
     "location": "Felsenkeller",
     "isoDatetime": "2026-05-25T20:40:00"
   },
   {
-    "id": "142",
+    "id": "149",
     "band": "Leaether Strip (DK)",
     "date": "25.05.2026",
-    "time": "22.20 Uhr",
+    "time": "22.20 Uhr",
     "location": "Felsenkeller",
     "isoDatetime": "2026-05-25T22:20:00"
   },
   {
-    "id": "143",
+    "id": "150",
     "band": "Dews Pegahorn (D)",
     "date": "25.05.2026",
-    "time": "17.00 Uhr",
+    "time": "17.00 Uhr",
     "location": "Haus Leipzig",
     "isoDatetime": "2026-05-25T17:00:00"
   },
   {
-    "id": "144",
+    "id": "151",
     "band": "The Essence (NL)",
     "date": "25.05.2026",
-    "time": "18.20 Uhr",
+    "time": "18.20 Uhr",
     "location": "Haus Leipzig",
     "isoDatetime": "2026-05-25T18:20:00"
   },
   {
-    "id": "145",
+    "id": "152",
     "band": "Ist Ist (UK)",
     "date": "25.05.2026",
-    "time": "19.40 Uhr",
+    "time": "19.40 Uhr",
     "location": "Haus Leipzig",
     "isoDatetime": "2026-05-25T19:40:00"
   },
   {
-    "id": "146",
+    "id": "153",
     "band": "Pink Turns Blue (D)",
     "date": "25.05.2026",
-    "time": "21.10 Uhr",
+    "time": "21.10 Uhr",
     "location": "Haus Leipzig",
     "isoDatetime": "2026-05-25T21:10:00"
   },
   {
-    "id": "147",
+    "id": "154",
     "band": "Keltania (D)",
     "date": "25.05.2026",
-    "time": "14.00 Uhr",
+    "time": "14.00 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
     "isoDatetime": "2026-05-25T14:00:00"
   },
   {
-    "id": "148",
+    "id": "155",
     "band": "Vogelsang (D)",
     "date": "25.05.2026",
-    "time": "15.30 Uhr",
+    "time": "15.30 Uhr",
     "location": "Heidnisches Dorf / Torhaus Dölitz",
-    "isoDatetime": "2026-05-25T15:30:00"
-  },
-  {
-    "id": "149",
-    "band": "Vogelfrey (D)",
-    "date": "25.05.2026",
-    "time": "17.20 Uhr",
-    "location": "Heidnisches Dorf / Torhaus Dölitz",
-    "isoDatetime": "2026-05-25T17:20:00"
-  },
-  {
-    "id": "150",
-    "band": "Patty Gurdy (D)",
-    "date": "25.05.2026",
-    "time": "19.15 Uhr",
-    "location": "Heidnisches Dorf / Torhaus Dölitz",
-    "isoDatetime": "2026-05-25T19:15:00"
-  },
-  {
-    "id": "151",
-    "band": "Oliver Decrow (D)",
-    "date": "25.05.2026",
-    "time": "19.30 Uhr",
-    "location": "Moritzbastei",
-    "isoDatetime": "2026-05-25T19:30:00"
-  },
-  {
-    "id": "152",
-    "band": "A Black Rainbow (D)",
-    "date": "25.05.2026",
-    "time": "20.30 Uhr",
-    "location": "Moritzbastei",
-    "isoDatetime": "2026-05-25T20:30:00"
-  },
-  {
-    "id": "153",
-    "band": "La Bande Son Imaginaire (MEX)",
-    "date": "25.05.2026",
-    "time": "21.30 Uhr",
-    "location": "Moritzbastei",
-    "isoDatetime": "2026-05-25T21:30:00"
-  },
-  {
-    "id": "154",
-    "band": "Trans – X (CDN)",
-    "date": "25.05.2026",
-    "time": "22.40 Uhr",
-    "location": "Moritzbastei",
-    "isoDatetime": "2026-05-25T22:40:00"
-  },
-  {
-    "id": "155",
-    "band": "Sandra Maria Huimann (AT)",
-    "date": "25.05.2026",
-    "time": "15.30 Uhr",
-    "location": "Parkschloß - Barocksaal",
     "isoDatetime": "2026-05-25T15:30:00"
   },
   {
     "id": "156",
-    "band": "Freunde Der Italienischen Oper (D)",
+    "band": "Vogelfrey (D)",
     "date": "25.05.2026",
-    "time": "17.20 Uhr",
-    "location": "Parkschloß - Barocksaal",
+    "time": "17.20 Uhr",
+    "location": "Heidnisches Dorf / Torhaus Dölitz",
     "isoDatetime": "2026-05-25T17:20:00"
   },
   {
     "id": "157",
-    "band": "Heydenbluth / Wolf (D)",
+    "band": "Patty Gurdy (D)",
     "date": "25.05.2026",
-    "time": "18.30 Uhr",
-    "location": "Parkschloß - Barocksaal",
-    "isoDatetime": "2026-05-25T18:30:00"
+    "time": "19.15 Uhr",
+    "location": "Heidnisches Dorf / Torhaus Dölitz",
+    "isoDatetime": "2026-05-25T19:15:00"
   },
   {
     "id": "158",
-    "band": "Sandow (D)",
+    "band": "Oliver Decrow (D)",
     "date": "25.05.2026",
-    "time": "19.50 Uhr",
-    "location": "Parkschloß - Barocksaal",
-    "isoDatetime": "2026-05-25T19:50:00"
+    "time": "19.30 Uhr",
+    "location": "Moritzbastei",
+    "isoDatetime": "2026-05-25T19:30:00"
   },
   {
     "id": "159",
-    "band": "Rosengarten (D)",
+    "band": "A Black Rainbow (D)",
     "date": "25.05.2026",
-    "time": "21.30 Uhr",
-    "location": "Parkschloß - Barocksaal",
-    "isoDatetime": "2026-05-25T21:30:00"
+    "time": "20.30 Uhr",
+    "location": "Moritzbastei",
+    "isoDatetime": "2026-05-25T20:30:00"
   },
   {
     "id": "160",
-    "band": "Oswald Henke (D)",
+    "band": "La Bande Son Imaginaire (MEX)",
     "date": "25.05.2026",
-    "time": "14.00 Uhr",
+    "time": "21.30 Uhr",
+    "location": "Moritzbastei",
+    "isoDatetime": "2026-05-25T21:30:00"
+  },
+  {
+    "id": "161",
+    "band": "Trans-X (CDN)",
+    "date": "25.05.2026",
+    "time": "22.40 Uhr",
+    "location": "Moritzbastei",
+    "isoDatetime": "2026-05-25T22:40:00"
+  },
+  {
+    "id": "162",
+    "band": "Lesung: Oswald Henke (D)",
+    "date": "25.05.2026",
+    "time": "14.00 Uhr",
     "location": "Peterskirche",
     "isoDatetime": "2026-05-25T14:00:00"
   },
   {
-    "id": "161",
+    "id": "163",
     "band": "The Beauty Of Gemina Trio+ (CH)",
     "date": "25.05.2026",
-    "time": "16.00 Uhr",
+    "time": "16.00 Uhr",
     "location": "Peterskirche",
     "isoDatetime": "2026-05-25T16:00:00"
   },
   {
-    "id": "162",
+    "id": "164",
     "band": "Jessica Iser & Markus Heitz (D)",
     "date": "25.05.2026",
-    "time": "18.00 Uhr",
+    "time": "18.00 Uhr",
     "location": "Peterskirche",
     "isoDatetime": "2026-05-25T18:00:00"
   },
   {
-    "id": "163",
+    "id": "165",
     "band": "Fliehende Stürme (D)",
     "date": "25.05.2026",
-    "time": "16.30 Uhr",
+    "time": "16.30 Uhr",
     "location": "Täubchenthal",
     "isoDatetime": "2026-05-25T16:30:00"
   },
   {
-    "id": "164",
+    "id": "166",
     "band": "The Crimson Ghosts (D)",
     "date": "25.05.2026",
-    "time": "17.50 Uhr",
+    "time": "17.50 Uhr",
     "location": "Täubchenthal",
     "isoDatetime": "2026-05-25T17:50:00"
   },
   {
-    "id": "165",
+    "id": "167",
     "band": "Batmobile (NL)",
     "date": "25.05.2026",
-    "time": "19.10 Uhr",
+    "time": "19.10 Uhr",
     "location": "Täubchenthal",
     "isoDatetime": "2026-05-25T19:10:00"
   },
   {
-    "id": "166",
+    "id": "168",
     "band": "Demented Are Go (UK)",
     "date": "25.05.2026",
-    "time": "20.50 Uhr",
+    "time": "20.50 Uhr",
     "location": "Täubchenthal",
     "isoDatetime": "2026-05-25T20:50:00"
   },
   {
-    "id": "167",
+    "id": "169",
     "band": "The Other Feat. Grand Horror (D/USA)",
     "date": "25.05.2026",
-    "time": "22.30 Uhr",
+    "time": "22.30 Uhr",
     "location": "Täubchenthal",
     "isoDatetime": "2026-05-25T22:30:00"
   },
   {
-    "id": "168",
+    "id": "170",
     "band": "Das Kinn (D)",
     "date": "25.05.2026",
-    "time": "18.45 Uhr",
+    "time": "18.45 Uhr",
     "location": "Volkspalast Kantine",
     "isoDatetime": "2026-05-25T18:45:00"
   },
   {
-    "id": "169",
+    "id": "171",
     "band": "Morgue Ensemble (I)",
     "date": "25.05.2026",
-    "time": "20.55 Uhr",
+    "time": "20.55 Uhr",
     "location": "Volkspalast Kantine",
     "isoDatetime": "2026-05-25T20:55:00"
   },
   {
-    "id": "170",
+    "id": "172",
     "band": "Hackedepicciotto (D)",
     "date": "25.05.2026",
-    "time": "17.30 Uhr",
+    "time": "17.30 Uhr",
     "location": "Volkspalast Kuppelhalle",
     "isoDatetime": "2026-05-25T17:30:00"
   },
   {
-    "id": "171",
+    "id": "173",
     "band": "Job Karma (PL)",
     "date": "25.05.2026",
-    "time": "19.40 Uhr",
+    "time": "19.40 Uhr",
     "location": "Volkspalast Kuppelhalle",
     "isoDatetime": "2026-05-25T19:40:00"
   },
   {
-    "id": "172",
+    "id": "174",
     "band": "The SPKtR/SPK (AUS/NZ)",
     "date": "25.05.2026",
-    "time": "21.50 Uhr",
+    "time": "21.50 Uhr",
     "location": "Volkspalast Kuppelhalle",
     "isoDatetime": "2026-05-25T21:50:00"
   },
   {
-    "id": "173",
-    "band": "Panzer AG (N)",
-    "date": "25.05.2026",
-    "time": "17.00 Uhr",
-    "location": "agra",
-    "isoDatetime": "2026-05-25T17:00:00"
-  },
-  {
-    "id": "174",
-    "band": "Unzucht (D)",
-    "date": "25.05.2026",
-    "time": "18.30 Uhr",
-    "location": "agra",
-    "isoDatetime": "2026-05-25T18:30:00"
-  },
-  {
     "id": "175",
-    "band": "Aesthetic Perfection (US)",
+    "band": "Freunde Der Italienischen Oper (D)",
     "date": "25.05.2026",
-    "time": "19.55 Uhr",
-    "location": "agra",
-    "isoDatetime": "2026-05-25T19:55:00"
+    "time": "17.20 Uhr",
+    "location": "Parkschloss - Barocksaal",
+    "isoDatetime": "2026-05-25T17:20:00"
   },
   {
     "id": "176",
-    "band": "Moonspell (P)",
+    "band": "Sandow (D)",
     "date": "25.05.2026",
-    "time": "21.20 Uhr",
-    "location": "agra",
-    "isoDatetime": "2026-05-25T21:20:00"
+    "time": "19.50 Uhr",
+    "location": "Parkschloss - Barocksaal",
+    "isoDatetime": "2026-05-25T19:50:00"
   },
   {
     "id": "177",
-    "band": "Molchat Doma (BY)",
+    "band": "Rosengarten (D)",
     "date": "25.05.2026",
-    "time": "22.45 Uhr",
-    "location": "agra",
-    "isoDatetime": "2026-05-25T22:45:00"
+    "time": "21.30 Uhr",
+    "location": "Parkschloss - Barocksaal",
+    "isoDatetime": "2026-05-25T21:30:00"
   },
   {
     "id": "178",
-    "band": "Stimmgewalt (D)",
+    "band": "Theater: Die Blutgräfin",
     "date": "25.05.2026",
-    "time": "12.30 Uhr",
-    "location": "agra-Halle 4.2",
-    "isoDatetime": "2026-05-25T12:30:00"
+    "time": "15.30 Uhr",
+    "location": "Parkschloss - Ballsaal",
+    "isoDatetime": "2026-05-25T15:30:00"
+  },
+  {
+    "id": "179",
+    "band": "Der Rabe – ein Edgar Allan Poe Abend",
+    "date": "25.05.2026",
+    "time": "18.35 Uhr",
+    "location": "Parkschloss - Ballsaal",
+    "isoDatetime": "2026-05-25T18:35:00"
   }
 ]
