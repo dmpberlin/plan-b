@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
 import { BottomNav } from "@/components/BottomNav";
+import { CookieBanner } from "@/components/CookieBanner";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-geist" });
 
@@ -24,6 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="mx-auto max-w-lg">{children}</main>
         <div className="mx-auto max-w-lg">
           <BottomNav />
+          <CookieBanner />
         </div>
       </body>
     </html>

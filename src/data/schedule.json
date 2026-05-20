@@ -40,14 +40,6 @@
     "isoDatetime": "2026-05-22T23:20:00"
   },
   {
-    "id": "6",
-    "band": "Kompromat (F)",
-    "date": "22.05.2026",
-    "time": "01.00 Uhr",
-    "location": "agra-Gelände",
-    "isoDatetime": "2026-05-22T01:00:00"
-  },
-  {
     "id": "7",
     "band": "Ductape (TR)",
     "date": "22.05.2026",
@@ -350,6 +342,14 @@
     "time": "23.45 Uhr",
     "location": "Parkschloss - Barocksaal",
     "isoDatetime": "2026-05-22T23:45:00"
+  },
+  {
+    "id": "6",
+    "band": "Kompromat (F)",
+    "date": "23.05.2026",
+    "time": "01.00 Uhr",
+    "location": "agra-Gelände",
+    "isoDatetime": "2026-05-23T01:00:00"
   },
   {
     "id": "45",
